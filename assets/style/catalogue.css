@@ -43,7 +43,8 @@
     position: relative;
     
 }
-.breadcups a:hover{
+.breadcups a:hover,
+.breadcups a:focus{
     color: rgba(0, 0, 0, .6);
 }
 
@@ -123,6 +124,7 @@
     text-transform: capitalize;
 }
 
+/* column header */
 .column-header{
     min-height: 70px;
     background-color: rgba(0, 0, 0, .3);
@@ -139,16 +141,7 @@
 }
 
 
-/* ASIDE */
-aside{
-    width: 268px;
-    
-
-    margin-left: auto;
-
-    padding-right: 68px;
-    padding-top: 70px;
-}
+/* filter form*/
 .filter-form{
     width: 268px;
     margin-left: auto;
@@ -262,9 +255,13 @@ aside{
     transition: opacity .1s;
 }
 
+
 .custom-list-1 label:hover .fake-checkbox{
     opacity: .6;
 }
+.real-checkbox:focus + .fake-checkbox{
+    opacity: .6;
+  }
 .custom-list-1 label:active .fake-checkbox{
     opacity: 1;
 }
@@ -308,6 +305,9 @@ aside{
 .custom-list-1 label:hover .fake-radio{
     opacity: .6;
 }
+.real-radio:focus + .fake-radio{
+    opacity: .6;
+}
 .custom-list-1 label:active .fake-radio{
     opacity: 1;
 }
@@ -336,6 +336,7 @@ aside{
     width: 972px;
 }
 
+/* column header */
 .right-column .column-header{
     display: flex;
     flex-wrap: wrap;
@@ -362,6 +363,9 @@ aside{
     margin-right: 40px;
 }
 
+
+
+/* sorting list */
 .sorting-list{
     list-style: none;
     margin: 0;
@@ -385,7 +389,8 @@ aside{
     color: rgba(0, 0, 0, .3);
 }
 
-.sort-btn:hover{
+.sort-btn:hover,
+.sort-btn:focus{
     color: rgba(0, 0, 0, .6);
 }
 
@@ -404,6 +409,7 @@ aside{
     margin-left: auto;
 }
 
+/* sort up/down btns */
 .icon-up,
 .icon-down{
     cursor: pointer;
@@ -422,7 +428,9 @@ aside{
 }
 
 .icon-up:hover,
-.icon-down:hover{
+.icon-down:hover,
+.icon-up:focus,
+.icon-down:focus{
     opacity: .4;
 }
 .icon-up:active,
@@ -446,7 +454,7 @@ aside{
 
 
 
-/* items-list */
+/* <!-- shop items--> */
 .padding-block{
     padding: 69px  0 69px 70px;
 }
@@ -479,10 +487,14 @@ aside{
     height: 380px;
 }
 
-.item-img-block:hover .hover-window{
-    opacity: 1;
-    
+.item-img-block:focus{
+    opacity: .6;
 }
+
+.item-img-block:hover .hover-window{
+    opacity: 1; 
+}
+
 
 
 
@@ -559,7 +571,7 @@ aside{
     text-align: right;
 }
 
-/* pagination-list */
+/* pagination block */
 
 .pagination-block{
     font-family: "Girloy";
