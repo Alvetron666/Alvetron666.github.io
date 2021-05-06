@@ -597,6 +597,7 @@ overflow: scroll;
 
     border: solid 1px #000;
     border-radius: 50%;
+    font-size: 0;
 }
 .slider-btn.active::before{
     content: "";
@@ -682,6 +683,7 @@ overflow: scroll;
 }
 
 .popular-item-icon{
+    font-size: 0;
     display: flex;
     
     width: 160px;
@@ -842,10 +844,12 @@ overflow: scroll;
     font-weight: 900;
     font-size: 47px;
     line-height: .8;
+    text-transform:capitalize;
 
     width: 425px;
     margin: 0;
     margin-bottom: 34px;
+    
 }
 
 .services-desc-item p{
@@ -1084,6 +1088,7 @@ overflow: scroll;
 
     margin: 0;
     padding: 0;
+    font-size: 0;
 
     display: flex;
     justify-content: center;
@@ -1121,6 +1126,7 @@ overflow: scroll;
 }
 
 .copyright-link{
+    font-size: 0;
     margin-top: auto;
     transition: opacity .1s;
 }
