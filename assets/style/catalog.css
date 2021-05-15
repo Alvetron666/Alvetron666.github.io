@@ -1,0 +1,335 @@
+h1{
+    text-align: center;
+    
+    padding: 70px 0 90px 0;
+    margin-bottom: 40px;
+
+    background-color: #eee;
+}
+
+
+/* filter-form */ 
+.filter-form{
+    width: 260px;
+}
+.filter-form .custom-btn-1{
+    width: 100%;
+    margin-top: 40px;
+    color: #000;
+    background-color: #eeeeee;
+}
+.filter-form fieldset{
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+.filter-form fieldset + fieldset{
+    margin-top: 40px;
+}
+
+.filter-form legend{
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+
+    margin-bottom: 20px;
+}
+.range-block{
+    width: 100%;
+    height: 80px;
+
+    background-color: #eeeeee;
+    border-radius: 1px;
+    display: flex;
+
+    padding: 21px;
+    margin-bottom: 20px;
+}
+
+.range-line{
+    width: 220px;
+    height: 2px;
+    background-color: #d7dcde;
+
+    margin: auto 0;
+    position: relative;
+}
+
+.active-line{
+    width: 60%;
+    height: 100%;
+
+    background-color: #00ca74;
+    
+}
+
+.range-btn{
+    cursor: pointer;
+
+    width: 20px;
+    height: 20px;
+
+    border: 8px solid #ffff;
+    border-radius: 50%;
+
+    background-color: #ababab;
+    
+    position: absolute;
+    top: calc(50% - 10px);
+    left: 0;
+}
+
+.range-btn.right{
+    left: 60%;
+}
+
+
+input[type='number'] {
+    -moz-appearance: textfield;
+}
+
+.price-range{
+    text-align: center;
+    width: 80px;
+    height: 38px;
+    
+    padding: 10px 20px;
+    margin-left: 5px;
+
+    font-family: inherit;
+    color: #283136;
+
+    background-color: #eeeeee;
+    border-radius: 3px;
+    border: 0;
+    
+}
+
+.filter-form label{
+    color: #283136;
+}
+
+
+/* real-radio */
+
+.real-radio,
+.real-checkbox{
+    position: absolute;
+    opacity: 0;
+}
+
+
+.custom-radio{
+    width: 25px;
+    height: 25px;
+
+    margin-right: 10px;
+
+    background-image: url("../images/icon/radio-off.svg");
+    opacity: .7;
+}
+
+.real-radio:checked + .custom-radio{
+    background-image: url("../images/icon/radio-on.svg");
+}
+
+.radio-fieldset label{
+    cursor: pointer;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.radio-fieldset label + label{
+    margin-top: 15px;
+}
+
+/* real-checkbox */
+
+.custom-checkbox{
+    width: 26px;
+    height: 23px;
+
+    background-image: url("../images/icon/checkbox-off.svg");
+    background-repeat: no-repeat;
+}
+
+.real-checkbox:checked + .custom-checkbox{
+    background-image: url("../images/icon/checkbox-on.svg");
+}
+
+
+/* index columns */
+
+.right-column{
+    width: 760px;
+}
+
+
+/* column-header */
+.column-header{
+    display: flex;
+    flex-wrap: wrap;
+   
+}
+
+.column-header ul{
+    list-style: none;
+    padding: 0;  
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.column-header button{
+    padding: 0;
+    border: 0;
+    background-color: transparent;
+}
+
+.column-header p{
+    font-size: 18px;
+    font-weight: 700;
+    
+    margin-right: 150px;
+}
+
+
+
+.column-header button{
+    opacity: .3;
+}
+.column-header button.active{
+    opacity: 1;
+}
+.sorting-btn button{
+    text-transform: uppercase;
+    margin: 0 20px;
+}
+
+
+.up-down-btn{
+    margin-left: auto;
+}
+.up-down-btn button{
+    margin: 0 9px;
+}
+
+
+
+/* shop-list */
+
+.shop-list{
+    list-style: none;
+    padding: 0;
+    padding-top: 50px;
+    margin: 0;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.shop-item{
+    position: relative;
+
+    width: 360px;
+    height: 616px;
+
+    margin-bottom: 30px;
+}
+.shop-item svg{
+    display: block;
+    opacity: .12;
+    transition: opacity .1s;
+}
+.shop-item:hover svg,
+.shop-item:focus svg{
+    opacity: 1;
+}
+
+.item-info{
+    text-align: center;
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    width: 100%;
+    height: 230px;
+
+    padding: 30px 80px;
+    padding-bottom: 20px;
+
+    background-color: #eeeeee;
+
+    opacity: 0;
+    transition: opacity .1s;
+}
+.shop-item:hover .item-info{
+    opacity: 1;
+}
+.item-info h2{
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.item-info p{
+    color: #666666;
+    margin-bottom: 30px;
+}
+
+.item-info button{
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+
+/* panigation */
+
+.panigation{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.page-list{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    flex-wrap: wrap;
+}
+.page-list li + li{
+    margin-left: 10px;
+}
+
+.page-list a{
+    display: block;
+    width: 50px;
+    height: 50px;
+
+    text-align: center;
+    line-height: 44px;
+
+    background-color: #eeeeee;
+    border-radius: 1px;
+    border: solid 3px #eeee;
+
+    transition: background-color .1s;
+}
+
+.panigation .custom-btn-1{
+    background-color: #eeeeee;
+    color: #000;
+
+    margin-left: 20px;
+
+    padding-left: 70px;
+    padding-right: 70px;
+}
+
+.page-list a:hover{
+    background-color: #ffffff;
+}
