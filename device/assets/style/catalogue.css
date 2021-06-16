@@ -1,0 +1,637 @@
+.main-catalogue{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.container2{
+    width: 1040px;
+    margin: 0 auto;
+
+    margin-bottom: 49px;
+    margin-top: 39px;
+}
+
+.main-title{
+    margin: 0;
+    margin-bottom: 20px;
+
+    font-family: "Girloy";
+    font-weight: 900;
+    font-size: 47px;
+    letter-spacing: .6px;
+}
+
+
+/* breadcups */
+
+.breadcups{
+    list-style: none;
+
+    display: flex;
+    flex-wrap: wrap;
+
+
+    margin: 0;
+    padding: 0;
+}
+
+.breadcups a{
+    font-size: 14px;
+    letter-spacing: .3px;
+
+    color: rgba(0, 0, 0, .3);
+    position: relative;
+    
+}
+.breadcups a:hover,
+.breadcups a:focus{
+    color: rgba(0, 0, 0, .6);
+}
+
+.breadcups a:active{
+    color: rgba(0, 0, 0, .1);
+}
+
+.breadcups li + li{
+    padding-left: 35px;
+}
+
+.breadcups li:nth-child(2){
+    padding-left: 0;
+}
+
+.breacups-arrow{
+    display: block;
+    width: 4px;
+    height: 7px;
+
+    position: absolute;
+    top: 8px;
+    right: -19px;
+}
+
+
+  
+
+
+.breacups-arrow::before{
+    content: "";
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+    width: 1px;
+    height: 4px;
+
+    background-color: #000;
+    transform: rotate(-45deg);
+}
+.breacups-arrow::after{
+    content: "";
+
+    position: absolute;
+    top: 32%;
+    left: 0;
+    
+    width: 1px;
+    height: 4px;
+
+    background-color: #000;
+    transform: rotate(45deg);
+}
+
+
+/* columns */
+.main-catalogue .index-column{
+    width: 1440px;
+}
+
+
+
+.main-catalogue .left-column{
+    width: 468px;
+    background-color: #efefef;
+}
+
+.main-catalogue .left-column h3,legend{
+    font-family: "Girloy";
+    font-weight: 900;
+    font-size: 18px;
+    
+}
+.main-catalogue legend{
+    text-transform: capitalize;
+}
+
+/* column header */
+.column-header{
+    min-height: 70px;
+    background-color: rgba(0, 0, 0, .3);
+    padding: 0 10px;
+    display: flex;
+}
+.column-header h3{
+    text-transform: uppercase;
+    letter-spacing: 3.6px;
+    margin: 0;
+    width: 268px;
+    margin: auto  0 auto auto;
+   
+}
+
+
+/* filter form*/
+.filter-form{
+    width: 268px;
+    margin-left: auto;
+    padding-top: 70px;
+    padding-right: 68px;
+}
+
+.filter-form fieldset{
+  
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+.filter-form fieldset + fieldset{
+    margin-top: 56px;
+}
+.filter-form legend{
+    font-size: 18px;
+    width: 100%;
+    
+    border-top: solid 2px black;
+
+    margin-bottom: 26px;
+
+    padding-top: 13px;
+}
+.double-range{
+    width: 100%;
+    height: 20px;
+
+    position: relative;
+}
+
+.line{
+    width: 100%;
+    height: 2px;
+    background-color: #dbdbdb;
+
+    position: absolute;
+    top: 50%;
+    left: 0;
+
+    margin-top: -1px;
+}
+.active-line{
+    width: 30%;
+    height: 2px;
+    background-color: #91c92f;
+
+    position: absolute;
+    top: 50%;
+    left: 0;
+
+    margin-top: -1px;
+}
+
+
+
+/* custom list 1*/
+
+.custom-list-1{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.custom-list-1 li + li{
+    margin-top: 16px;
+}
+
+.custom-list-1 label{
+    cursor: pointer;
+    display: flex;
+    position: relative;
+}
+
+.custom-list-1 label{
+
+}
+
+.custom-list-1 p{
+    margin: auto 0;
+    letter-spacing: -0.8px;
+}
+
+/* custom checkbox*/
+
+.real-checkbox,
+.real-radio{
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 0;
+    opacity: 0;
+}
+
+
+.fake-checkbox{
+    display: inline-block;
+
+    position: relative;
+
+    width: 26px;
+    height: 23px;
+    margin-right: 15px;
+
+    border: inset solid 2px #000;
+    border-radius: 1px;
+    background-image: url("../images/icons/checkbox/checkbox-off.svg");
+    background-repeat: no-repeat;
+    transition: opacity .1s;
+}
+
+
+.custom-list-1 label:hover .fake-checkbox{
+    opacity: .6;
+}
+.real-checkbox:focus + .fake-checkbox{
+    opacity: .6;
+  }
+.custom-list-1 label:active .fake-checkbox{
+    opacity: 1;
+}
+
+.fake-checkbox:focus{
+    opacity: .6;
+}
+
+.real-checkbox:disabled + .fake-checkbox{
+    opacity: .25;
+}
+.real-checkbox:checked + .fake-checkbox{
+    background-image: url("../images/icons/checkbox/checkbox-on.svg");
+}
+
+/* radio*/
+
+
+
+
+.fake-radio{
+    display: inline-block;
+
+    position: relative;
+
+    width: 25px;
+    height: 25px;
+    margin-right: 15px;
+
+    border: inset solid 2px #000;
+    border-radius: 1px;
+    background-image: url("../images/icons/radio/radio-off.svg");
+    background-repeat: no-repeat;
+}
+
+.real-radio:checked + .fake-radio{
+    background-image: url("../images/icons/radio/radio-on.svg");
+}
+
+
+.custom-list-1 label:hover .fake-radio{
+    opacity: .6;
+}
+.real-radio:focus + .fake-radio{
+    opacity: .6;
+}
+.custom-list-1 label:active .fake-radio{
+    opacity: 1;
+}
+
+.fake-radio:focus{
+    opacity: .6;
+}
+
+.real-radio:disabled + .fake-radio{
+    opacity: .25;
+}
+
+
+.filter-form .custom-btn-1{
+    margin-top: 30px;
+    width: 100%;
+}
+
+
+
+
+/* right-column */
+
+.right-column{
+    
+    width: 972px;
+}
+
+/* column header */
+.right-column .column-header{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 70px;
+    padding-right: 140px;
+    
+
+}
+
+.right-column .column-header h3{
+    font-family: "Girloy";
+    font-weight: 900;
+    font-size: 16px;
+    letter-spacing: 3.6px;
+    text-transform: uppercase;
+
+    margin: 0;
+    width: auto;
+
+    margin-right: 40px;
+}
+
+
+
+/* sorting list */
+.sorting-list{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sorting-list li{
+    margin: 0 15px;
+}
+.sort-btn{
+    cursor: pointer;
+
+    font-family: "Open Sans";
+    font-weight: 400;
+    background-color: transparent;
+    border: 0;
+    color: rgba(0, 0, 0, .3);
+}
+
+.sort-btn:hover,
+.sort-btn:focus{
+    color: rgba(0, 0, 0, .6);
+}
+
+.sort-btn:active{
+    color: rgba(0, 0, 0, 1);
+}
+
+.sort-btn.active{
+    color: rgba(0, 0, 0, 1);
+}
+
+
+
+.sort-updown-btns{
+    display: flex;
+    margin-left: auto;
+}
+
+/* sort up/down btns */
+.icon-up,
+.icon-down{
+    cursor: pointer;
+
+    font-size: 0;
+    width: 11px;
+    height: 10px;
+    opacity: .2;
+    padding: 0;
+    margin: auto 0;
+
+    border:0;
+    background-color: transparent;
+
+    transition: opacity .1s;
+}
+
+.icon-up:hover,
+.icon-down:hover,
+.icon-up:focus,
+.icon-down:focus{
+    opacity: .4;
+}
+.icon-up:active,
+.icon-down:active{
+    opacity: 1;
+}
+.icon-up + .icon-down{
+    margin-left: 20px;
+}
+.icon-up.active,
+.icon-down.active{
+    opacity: 1;
+}
+.icon-up{
+    background-image: url("../images/icons/sorting/icon-up-dir.svg");
+}
+
+.icon-down{
+    background-image: url("../images/icons/sorting/icon-down-dir.svg");
+}
+
+
+
+/* <!-- shop items--> */
+.padding-block{
+    padding: 69px  0 69px 70px;
+}
+.items-list{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    flex-wrap: wrap;
+
+
+}
+
+.items-list li{
+    width: 360px;
+    margin-bottom: 53px;
+}
+
+.items-list li + li:nth-child(2n){
+    margin-left: 40px;
+}
+
+
+.item-img-block{
+    display: block;
+    position: relative;
+
+    width: 360px;
+    height: 380px;
+}
+
+.item-img-block:focus{
+    opacity: .6;
+}
+
+.item-img-block:hover .hover-window{
+    opacity: 1; 
+}
+
+
+
+
+.item-img-block img{
+    width: 100%;
+}
+
+.hover-window{
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+    
+    background-color: rgba(166, 166, 166, .7);
+
+
+    padding-top: 160px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: opacity .1s;
+
+
+}
+.hover-window .custom-btn-1{
+    padding: 0 36px;
+    margin-bottom: 20px;
+}
+
+.compare-btn{
+    cursor: pointer;
+    font-family: inherit;
+    border: 0;
+    padding: 0;
+    background-color: transparent;
+    
+    color: rgba(0, 0, 0, .5);
+    
+    transition: color .3s;
+}
+
+.compare-btn:hover{
+    color: rgba(0, 0, 0, 1);
+}
+.compare-btn:active{
+    color: rgba(0, 0, 0, .2);
+}
+
+
+.item-img-block + .item-desc{
+    margin-top: 30px;
+}
+
+.item-desc{
+    display: flex;
+    
+}
+
+.item-name{
+    font-family: "Girloy";
+    font-weight: 900;
+    font-size: 18px;
+    width: 260px;
+}
+
+.item-price{
+    font-size: 16px;
+    width: 100px;
+    margin-left: auto;
+    text-align: right;
+}
+
+/* pagination block */
+
+.pagination-block{
+    font-family: "Girloy";
+    font-weight: 900;
+    font-size: 16px;
+ 
+
+    display: flex;
+    width: 760px;
+
+    min-height: 70px;
+    background-color: #ebebeb;
+}
+
+.page-list{
+   list-style: none;
+    padding: 0;
+    margin: 0;
+
+    flex-grow: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.page-list li{
+    margin: 0 15px;
+}
+
+.page-list a{
+    opacity: .3;
+    color: #464646;
+}
+
+.page-list a.active{
+    opacity: 1;
+}
+
+.pagination-btns{
+    cursor: pointer;
+    border: 0;
+    background-color: rgba(0, 0, 0, 0);
+
+    font-family: inherit;
+    font-weight: inherit;
+    font-size: inherit;
+
+    text-transform: uppercase;
+    letter-spacing: 3.6px;
+
+    padding: 0 30px;
+
+    transition: background-color .3s, color .2s;
+}
+
+.pagination-btns:hover{
+    background-color: rgba(0, 0, 0, .08);
+}
+
+.pagination-btns:active{
+    color: rgba(0, 0, 0, .3);
+}

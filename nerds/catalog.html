@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <link rel="stylesheet" href="assets/style/main.css">
+    <link rel="stylesheet" href="assets/style/catalog.css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="icon" href="assets/images/nerds-logo.svg">
+
+    <title>Catalog</title>
+</head>
+<body>
+
+     <!-- header -->
+     <header class="main-header">
+        <!-- navigation -->
+        <nav class="main-nav container">
+            <a href="index.html">
+                <svg xmlns="http://www.w3.org/2000/svg" width="160" height="65" viewBox="0 0 160 65"><path d="M157.936 49.374c-1.235.161-2.523.271-3.757.377v.056c-2.415 17.364-26.188 20.231-26.779 6.599-.269-6.167 11.593-7.95 23.398-9.088.429-11.09-15.901 5.667-21.608-4.601-5.019-9.025 14.632-17.938 16.728-16.102 6.438 5.636 3.404 6.618-1.379 8.335-9.49 3.41-5.791 4.107-4.511 3.726 7.569-2.253 14.366-1.04 14.312 8.317 1.288-.107 2.522-.163 3.757-.271 2.306-.215 2.467 2.435-.161 2.652zm-7.514.756c-9.124 1.028-17.013 2.436-16.153 5.355 1.716 5.573 13.577 6.818 16.153-5.355zM117.678 44.918c-.682-.037-.703-6.038.112-11.688 1.005-6.951 11.935-3.357 9.093-1.906-2.975 1.52-4.429 8.718-6.266 12.087-.635 1.161-2.605 1.526-2.939 1.507zM42.105 21.002c2.376 4.866-4.937 8.171-8.292 4.521-1.398-1.555-.755-4.56 2.636-6.193 1.697-.836 4.073-1.596 5.656 1.672zM57.062 18.861c2.585 5.297-5.38 8.896-9.031 4.922-1.522-1.695-.823-4.963 2.873-6.742 1.846-.911 4.432-1.736 6.158 1.82zM28.883 61.666c-7.919 5.338-14.219 4.159-12.212-10.848 1.45-10.904-.948-11.521-3.122-9.442-2.845 2.697-4.628 9.723-4.684 16.412a50.98 50.98 0 0 0 1.004 4.776c.334 1.63-4.907 3.315-7.974 1.011C.837 62.79 0 54.865 0 44.131c0-8.824 1.171-14.895 2.23-15.175 8.029-2.191 9.312 1.348 7.583 7.981a47.637 47.637 0 0 0-1.395 7.924c1.673-4.664 4.071-8.485 6.803-10.173 7.416-4.664 13.605-2.473 12.434 6.801-2.007 16.58-2.174 18.827-.39 17.535 2.231-1.574 3.68 1.238 1.618 2.642zM54.982 59.59c-2.175 3.484-7.806 5.171-13.216 4.552-7.75-.843-12.545-7.756-10.705-18.097 2.008-11.185 18.065-18.322 23.196-10.341 3.735 5.789-2.175 16.017-11.597 19.783l-.502.168c1.951 5.171 6.579 7.476 11.039 2.36 2.119-2.36 3.624-1.348 1.785 1.575zm-13.605-7.418c5.855-4.159 7.806-13.32 6.189-15.905-1.728-2.697-5.074 1.517-6.245 11.746-.111 1.461-.111 2.865.056 4.159zM83.091 44.992c-1.597 2.507-3.903 4.384-5.966 5.059-2.398.73-5.185.056-5.185-2.698 0-1.011.892-3.372 3.624-4.721-.168-1.911-1.394-2.417-2.286-1.686-3.345 2.586-7.417 12.25-6.356 19.221.055.168.055.337.055.506.168.617.335 1.237.558 1.854.557 1.574-4.907 3.316-7.973.956-1.059-.788-1.617-6.97-1.617-17.704 0-8.824 1.951-16.636 3.011-16.917 6.412-1.743 10.147 1.292 8.14 7.249-1.171 3.373-2.23 6.801-2.843 10.399 2.453-6.688 6.523-12.872 9.812-14.501 5.856-2.923 10.092.956 8.867 7.813-.056.11-.112.393-.112.449-.056.562-.566 2.302-.39 1.741-.516 1.645-.892 2.277-1.339 2.98z"/><path d="M113.207 26.161a86.988 86.988 0 0 0-1.115 7.531c-1.059 10.06-.612 18.996.613 22.986.726 2.137 3.457 4.946 6.078 2.023 2.843-3.203 5.967-1.349 2.174 2.416-2.34 2.305-6.689 3.878-11.039 3.428-3.123-.393-5.018-2.415-6.134-5.505-.444.898-.947 1.685-1.56 2.302-2.119 2.193-4.685 3.43-7.974 3.092-6.637-.73-10.538-7.923-8.699-18.153 1.952-10.791 11.319-14.725 16.728-11.857.112-1.349.223-2.699.335-4.104.055-.281.055-.562.11-.843a96.962 96.962 0 0 1-4.962.956C73.787 34.423 82.04 14.864 87.894 9.75c6.636-5.733 7.36-1.855 5.297-.562-3.68 2.36-5.297 15.905 5.241 15.905 1.729 0 3.346-.112 4.962-.281C106.685 6.49 116.665-2.391 124.75.532c8.976 3.26 8.029 17.535-11.543 25.629zm-10.928 24.393c-.224-3.542-.224-7.532-.167-11.636 0-.506.056-1.011.056-1.461-3.346-1.518-6.635 3.653-7.473 10.792-.946 8.373 2.788 12.813 4.908 10.791 1.617-1.631 2.453-6.803 2.676-8.486zm24.086-43.165c-1.784-2.642-8.307.562-12.098 14.332 9.535-4.554 13.326-12.422 12.098-14.332z"/></svg>
+            </a>
+
+            <div class="flex-block">
+
+                <ul class="site-nav">
+                    <li><a href="#" class="active">Студия</a></li>
+                    <li><a href="#">Клиенты</a></li>
+                    <li><a href="#">Магазин</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+    
+                <ul class="user-nav">
+                    <li>
+                        <a href="#" class="user-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15"><circle fill="#a6a6a6" cx="4.5" cy="13.5" r="1.5"/><circle fill="#a6a6a6" cx="12.5" cy="13.5" r="1.5"/><path fill="#a6a6a6" d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z"/></svg>
+    
+                            Корзина
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+        </nav>
+    </header>
+
+
+    <main>
+        <h1>Магазин готовых шаблонов</h1>
+
+
+        <!-- container -->
+        <div class="container">
+
+            <!-- index-columns -->
+            <div class="index-columns ">
+                <!-- filter-form -->
+                <form class="filter-form">
+                    <!-- fieldset -->
+                    <fieldset>
+                        <legend>
+                            Стоимость:
+                        </legend>
+
+                        <div class="range-block">
+                            <div class="range-line">
+                                <div class="active-line">
+                                    <div class="range-btn left"></div>
+                                    <div class="range-btn right"></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="flex-block">
+                            <label>
+                                ОТ <input type="number" class="price-range" value="0">
+                            </label>
+                            <label>
+                                ДО <input type="number" class="price-range" value="15000">
+                            </label>
+                        </div>
+                    </fieldset>
+
+                    <!-- fieldset -->
+                    <fieldset class="radio-checkbox-fieldset">
+                        <legend>
+                            Сетка
+                        </legend>
+                        <label>
+                            <input type="radio" name="radio"  class="real-radio">
+                            <span class="custom-radio" ></span>
+                            <span>Адаптивная</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="radio"  class="real-radio">
+                            <span class="custom-radio"></span>
+                            <span>Фиксированая</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="radio"  class="real-radio">
+                            <span class="custom-radio"></span>
+                            <span>Резиновая</span>
+                        </label>
+                    </fieldset>
+
+                    <!-- fieldset -->
+                    <fieldset class="radio-checkbox-fieldset">
+                        <legend>
+                            Слайдер
+                        </legend>
+                        <label>
+                            <input type="checkbox" name="checkbox-1"  class="real-checkbox">
+                            <span class="custom-checkbox"></span>
+                            <span>Адаптивная</span>
+                        </label>
+                        <label>
+                            <input type="checkbox" name="checkbox-1"  class="real-checkbox">
+                            <span class="custom-checkbox"></span>
+                            <span>Блок преймуществ</span>
+                        </label>
+                        <label>
+                            <input type="checkbox" name="checkbox-1"  class="real-checkbox">
+                            <span class="custom-checkbox"></span>
+                            <span>Новости</span>
+                        </label>
+                        <label>
+                            <input type="checkbox" name="checkbox-1"  class="real-checkbox">
+                            <span class="custom-checkbox"></span>
+                            <span>Галерея</span>
+                        </label>
+                        <label>
+                            <input type="checkbox" name="checkbox-1"  class="real-checkbox">
+                            <span class="custom-checkbox"></span>
+                            <span>Корзина</span>
+                        </label>
+
+                    </fieldset>
+
+                    <button type="button" class="custom-btn-1">ПОКАЗАТЬ</button>
+                </form>
+
+                <!-- right-column -->
+                <div class="right-column">
+                    <!-- column-header  -->
+                    <div class="column-header">
+                        <p>СОРТИРОВКА:</p>
+
+                        <div class="sorting-btn">
+                            <button type="button"  class="active" >ПО ЦЕНЕ</button>
+                            <button type="button" >ПО ТИПУ</button>
+                            <button type="button" >ПО НАЗВАНИЮ</button>
+                        </div>
+                        <div class="up-down-btn">
+                            <button type="button" class="active"><svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 10L0 0h11"/></svg></button>
+                            <button type="button"><svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 0L0 10h11z"/></svg></button>
+                        </div>
+                    </div>
+
+                    <!-- shop list -->
+                    <ul class="shop-list">
+                        <!-- li -->
+                        <li>
+                            <article class="shop-item" tabindex="0">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="360" height="40" viewBox="0 0 360 40"><path  fill="#4D4D4D" d="M356 0H4C1.8 0 0 1.8 0 4v36h360V4c0-2.2-1.8-4-4-4zM22.991 27a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14z"/></svg>
+                                <img src="assets/images/shop-items/img-sedona.jpg" alt="Картинка информационого сайта 
+                                для туристов">
+                                <div class="item-info">
+                                    <a href="#">SEDONA</a>
+                                    <p>Информационный сайт 
+                                        для туристов</p>
+                                    <button type="button" class="custom-btn-1">
+                                        9 900 руб.
+                                    </button>
+                                </div>
+                            </article>                         
+                        </li>
+
+                        <!-- li -->
+                        <li>
+                            <article class="shop-item" tabindex="0">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="360" height="40" viewBox="0 0 360 40"><path  fill="#4D4D4D" d="M356 0H4C1.8 0 0 1.8 0 4v36h360V4c0-2.2-1.8-4-4-4zM22.991 27a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14z"/></svg>
+                                <img src="assets/images/shop-items/img-pink.jpg" alt="Картинка информационого сайта 
+                                для туристов">
+                                <div class="item-info">
+                                    <a href="#">SEDONA</a>
+                                    <p>Информационный сайт 
+                                        для туристов</p>
+                                    <button type="button" class="custom-btn-1">
+                                        9 900 руб.
+                                    </button>
+                                </div>
+                            </article>                         
+                        </li>
+
+                        <!-- li -->
+                        <li>
+                            <article class="shop-item" tabindex="0">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="360" height="40" viewBox="0 0 360 40"><path  fill="#4D4D4D" d="M356 0H4C1.8 0 0 1.8 0 4v36h360V4c0-2.2-1.8-4-4-4zM22.991 27a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14z"/></svg>
+                                <img src="assets/images/shop-items/img-barbershop.jpg" alt="Картинка информационого сайта 
+                                для туристов">
+                                <div class="item-info">
+                                    <a href="#">SEDONA</a>
+                                    <p>Информационный сайт 
+                                        для туристов</p>
+                                    <button type="button" class="custom-btn-1">
+                                        9 900 руб.
+                                    </button>
+                                </div>
+                            </article>                         
+                        </li>
+
+                        <!-- li -->
+                        <li>
+                            <article class="shop-item" tabindex="0">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="360" height="40" viewBox="0 0 360 40"><path  fill="#4D4D4D" d="M356 0H4C1.8 0 0 1.8 0 4v36h360V4c0-2.2-1.8-4-4-4zM22.991 27a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14z"/></svg>
+                                <img src="assets/images/shop-items/img-mishka.jpg" alt="Картинка информационого сайта 
+                                для туристов">
+                                <div class="item-info">
+                                    <a href="#">SEDONA</a>
+                                    <p>Информационный сайт 
+                                        для туристов</p>
+                                    <button type="button" class="custom-btn-1">
+                                        9 900 руб.
+                                    </button>
+                                </div>
+                            </article>                         
+                        </li>
+
+                        <!-- li -->
+                        <li>
+                            <article class="shop-item" tabindex="0">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="360" height="40" viewBox="0 0 360 40"><path  fill="#4D4D4D" d="M356 0H4C1.8 0 0 1.8 0 4v36h360V4c0-2.2-1.8-4-4-4zM22.991 27a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14z"/></svg>
+                                <img src="assets/images/shop-items/img-aplus.jpg" alt="Картинка информационого сайта 
+                                для туристов">
+                                <div class="item-info">
+                                    <a href="#">SEDONA</a>
+                                    <p>Информационный сайт 
+                                        для туристов</p>
+                                    <button type="button" class="custom-btn-1">
+                                        9 900 руб.
+                                    </button>
+                                </div>
+                            </article>                         
+                        </li>
+
+                        <!-- li -->
+                        <li>
+                            <article class="shop-item" tabindex="0">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="360" height="40" viewBox="0 0 360 40"><path  fill="#4D4D4D" d="M356 0H4C1.8 0 0 1.8 0 4v36h360V4c0-2.2-1.8-4-4-4zM22.991 27a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14z"/></svg>
+                                <img src="assets/images/shop-items/img-kvast.jpg" alt="Картинка информационого сайта 
+                                для туристов">
+                                <div class="item-info">
+                                    <a href="#">SEDONA</a>
+                                    <p>Информационный сайт 
+                                        для туристов</p>
+                                    <button type="button" class="custom-btn-1">
+                                        9 900 руб.
+                                    </button>
+                                </div>
+                            </article>                         
+                        </li>
+                    </ul>
+
+                    <div class="panigation">
+
+                        <ul class="page-list">
+                            <li>
+                                <a href="#">
+                                    1
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                    2
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                    3
+                                </a>
+                            </li>
+                        </ul>
+                        <button type="button" class="custom-btn-1">СЛЕДУЮЩАЯ</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <section class="section-adress">
+            <h2 class="vissualy-hidden">Наш адрес</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d163.0180590678635!2d28.489671326545295!3d49.17610345901773!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sua!4v1620503442363!5m2!1sru!2sua" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" tabindex="-1"></iframe>
+            <div class="container">
+                <div class="adress">
+                    <h3>NЁRDS DESIGN STUDIO</h3>
+                    <p>191186, Санкт-Петербург, 
+                        ул. Б. Конюшенная, д. 19/8</p>
+                    <p>тел. +7 (812) 275-75-75</p>
+                    <button type="button" class="custom-btn-1 contact-btn">Напишите нам</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer container">
+        <ul class="social-list">
+            <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="15" viewBox="0 0 26 15"><path fill="#FFF" d="M16.138 11.51c.956-.309 2.18 2.04 3.483 2.939.978.681 1.727.534 1.727.534l3.473-.05s1.815-.112.957-1.554c-.071-.12-.503-1.069-2.585-3.022-2.177-2.043-1.882-1.712.739-5.244 1.597-2.153 2.236-3.468 2.036-4.028-.192-.539-1.365-.399-1.365-.399L20.69.713c-.381.001-.704.119-.851.515-.003.004-.621 1.666-1.445 3.079-1.741 2.989-2.436 3.148-2.724 2.961-.661-.433-.494-1.737-.494-2.664 0-2.897.432-4.105-.846-4.417-.427-.104-.739-.172-1.828-.182-1.392-.021-2.574 0-3.244.329-.445.223-.786.712-.579.74.26.035.843.16 1.155.586.401.552.389 1.789.389 1.789s.229 3.411-.54 3.834c-.528.29-1.25-.302-2.803-3.016-.793-1.388-1.392-2.922-1.392-2.922s-.116-.285-.326-.441c-.25-.185-.6-.244-.6-.244L.848.684S.29.7.085.946c-.182.218-.015.668-.015.668s2.909 6.881 6.203 10.347c3.02 3.182 6.452 2.971 6.452 2.971h1.555s.469-.054.709-.312c.224-.24.214-.691.214-.691s-.031-2.109.935-2.419z"/></svg></a></li>
+
+            <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="22" viewBox="0 0 12 22"><path fill="#FFF" d="M12 4V0H8a4 4 0 0 0-4 4v4H0v4h4v10h4V12h4V8H8V4h4z"/></svg></a></li>
+
+            <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21"><path fill="#FFF" d="M18 0H3C1.35 0 0 1.35 0 3v15c0 1.65 1.35 3 3 3h15c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3zm-7.5 7c1.93 0 3.5 1.57 3.5 3.5S12.43 14 10.5 14 7 12.43 7 10.5 8.57 7 10.5 7zM18 18H3V9h1.181A6.504 6.504 0 0 0 4 10.5a6.5 6.5 0 1 0 13 0 6.45 6.45 0 0 0-.181-1.5H18v9zm0-11h-4V3h4v4z"/></svg></a></li>
+        </ul>
+        <div class="footer-inner">
+            <span>Давайте дружить, это выгодно!</span>
+            <p>Скидка 10% для друзей из социальных сетей.</p>   
+        </div>
+    </footer>
+
+        <!--form-write-to-us-->
+        <form class="form-write-to-us">
+            <h2>Напишите нам</h2>
+            <div class="flex-block">
+                <div class="form-block">
+                    <label for="nameid">Ваше имя:</label>
+                    <input type="text" name="name" id="nameid" placeholder="Имя Фамилия">
+                </div>
+    
+                <div class="form-block">
+                    <label for="emailid">Ваше e-mail:</label>
+                    <input type="text" name="email" id="emailid" placeholder="email@example.com">
+                </div>
+            </div>
+    
+            <div class="form-block">
+                <label for="textarea">Текст письма:</label>
+                <textarea type="text" name="textarea" id="textarea" placeholder="В свободной форме"></textarea>
+            </div>
+            <button type="button" class="custom-btn-1 send-btn">ОТПРАВИТЬ</button>
+            <button type="button" class="close-btn">close windows</button>
+        </form>
+    
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

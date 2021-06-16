@@ -1,0 +1,154 @@
+.modal-feedback{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+
+    width: 100%;
+    min-height: 100%;
+    background-color: rgba(0, 0, 0, .3);
+
+}
+.modal-feedback.active{
+    display: block;
+}
+
+.feedback-form{
+    width: 477px;
+
+    position: absolute;
+    top: 50%;
+    left: calc(50% - 238.5px);
+    transform: translateY(-50%);
+
+    padding: 20px 24px;
+    border-radius: 6px;
+    color: #000;
+    background-color: #f8f7f4;
+    animation: bounce 500ms ease-in-out;
+}
+
+.feedback-form.wrong-anim{
+    animation: wrong 1s;
+}
+
+.feedback-form p{
+    font-size: 24px;
+    font-weight: 500;
+
+    margin: 0;
+    margin-bottom: 22px;
+}
+
+.feedback-form label{
+
+}
+
+.feedback-form input[type="text"],
+.feedback-form textarea
+{
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 500;
+    
+    width: 267px;
+
+    padding: 13px 14px;
+    margin-bottom: 20px;
+    
+    border-radius: 3px;
+    border: solid 1px #d3d3d2;
+}
+.feedback-form textarea{
+    width: 100%;
+    height: 155px;
+    border: solid 1px #d3d3d3;
+    resize: none;
+}
+.feedback-form .btn{
+    display: block;
+    margin-left: auto;
+    
+}
+
+/* close-btn */
+.close-btn{
+    cursor: pointer;
+
+    width: 18px;
+    height: 18px;
+
+    position: absolute;
+    top: 15px;
+    right: 10px;
+
+    background-color: transparent;
+    border: 0;
+}
+
+.close-btn::before,
+.close-btn::after{
+    content: "";
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    width: 18px;
+    height: 2px;
+
+    border-radius: 2px;
+    background-color: #000;
+
+    transition: background-color 300ms;
+
+
+
+}
+.close-btn::before{
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+.close-btn::after{
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.close-btn:hover::before,
+.close-btn:hover::after,
+.close-btn:focus::before,
+.close-btn:focus::after{
+    background-color: rgb(92, 92, 92);
+}
+
+
+
+@keyframes bounce{
+    0%{
+        transform: translateY(-150%);
+    }
+    50%{
+        transform: translateY(-30%);
+    }
+
+    
+    100%{
+        transform: translateY(-50%);
+    }
+}
+
+@keyframes wrong{
+    0%{
+        
+    }
+    10%, 30%, 50%, 70%, 90%{
+        transform: translate(-5%, -50%);
+    }
+    20%, 40%, 60%, 80%{
+        transform: translate(5%, -50%);
+    }
+    100%{
+       
+    }
+}
+
+
