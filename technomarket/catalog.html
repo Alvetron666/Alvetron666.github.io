@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/styles/main.css">
+    <link rel="stylesheet" href="assets/styles/catalog.css">
+    <title>Catalog</title>
+</head>
+<body>
+    <header class="main__header">
+        <nav class="main__nav">
+            <div class="first__row">
+                <div class="container">
+                    <div class="first-col">
+                        <a href="#" class="logo__link">
+                            <img src="assets/images/logo/technomark.png" alt="Логотип компании 'Technomark'">
+                        </a>
+                        <label for="search" class="visually-hidden">Поисковое поле:</label>
+                        <input type="text" class="search__inp" id=" search"placeholder="Поиск:">
+                    </div>
+                    <div class="second-col">
+                        <div class="user__nav">
+                            <button type="button" class="user__btn">
+                                <img src="assets/images/icons/icon-bookmark.png" alt="">
+                                Закладки: 0
+                            </button>
+                            <button type="button" class="user__btn">
+                                <img src="assets/images/icons/cart-icon.png" alt="">
+                                Корзина: 0
+                            </button>
+                            <button type="button" class=" user__btn order"> 
+                                Оформить заказ
+                            </button>
+
+                        </div>
+                    </div>
+                </div>
+            </div><!-- first row -->
+            <div class="second__row container"> 
+                <p class="header__text">
+                    Интернет-магазин<br>
+строительных материалов<br>
+и инструментов для ремонта
+                </p>
+                <div class="second__row--inner">
+                    <div class="header__info">
+                        <a>+7 (812) 555-05-55</a>
+                        <p>
+                            г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+                        </p>
+                    </div>
+                    <div class="user__nav">
+                        <button type="button" class="user__btn--2">
+                            <img src="assets/images/icons/icon-login.png" alt="" class="entry-icon">
+                            <span>Войти</span>
+                        </button>
+                        <button type="button" class="user__btn--2">
+                            Регистрация
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <ul class="site__nav">
+                    <li>
+                        <a href="#">Главная</a>
+                    </li>
+                    <li>
+                        <a href="#">Компания</a>
+                    </li>
+                    <li>
+                        <a href="#">Каталог</a>
+                    </li>
+                    <li>
+                        <a href="#">Новости</a>
+                    </li>
+                    <li>
+                        <a href="#">Спецпредложения</a>
+                    </li>
+                    <li>
+                        <a href="#" >Доставка</a>
+                    </li>
+                    <li>
+                        <a href="#">Контакты</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <ul class="breadcrumbs__list">
+            <li>
+                <a href="index.html">
+                    <img src="assets/images/icons/icon-home.png" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    Каталог
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    Инструмент
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    Перфораторы
+                </a>
+            </li>
+        </ul>
+
+        <h1>Перфараторы</h1>
+
+
+        <div class="index-columns">
+            <form class="filter__form">
+                <header class="custom__header">
+                    ФИЛЬТР
+                </header>
+                <fieldset>
+                    <legend>Цена</legend>
+                    <div class="double__range">
+                        <div class="double__range__line">
+                            <div class="double__range__activeline"></div>
+                            <button  type="button" class="range__btn"></button>
+                            <button  type="button" class="range__btn range__btn--right"></button>
+                        </div>
+                    </div>
+                    <div class="index-columns">
+                        <input type="number" class="range__input" value="0">
+                        <hr class="dash">
+                        <input type="number" class="range__input" value="30000">
+                    </div>
+
+                </fieldset>
+                <fieldset>
+                    <legend>Производители</legend>
+                    <label>
+                        <input type="checkbox" class="real__checkbox">
+                        <span class="fake__checkbox"></span>
+                        BOSCH
+                    </label>
+                    <label>
+                        <input type="checkbox" class="real__checkbox">
+                        <span class="fake__checkbox"></span>
+                        ИНТЕРСКОЛ
+                    </label>
+                    <label>
+                        <input type="checkbox" class="real__checkbox">
+                        <span class="fake__checkbox"></span>
+                        MAKIta
+                    </label>
+                    <label>
+                        <input type="checkbox" class="real__checkbox">
+                        <span class="fake__checkbox"></span>
+                        Dewalt
+                    </label>
+                    <label>
+                        <input type="checkbox" class="real__checkbox">
+                        <span class="fake__checkbox"></span>
+                        Hitachi
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <legend>ПИТАНИЕ</legend>
+                    <label>
+                        <input type="radio" name="radio" class="real__checkbox">
+                        <span class="fake__radio"></span>
+                        Аккумуляторные
+                    </label>
+                    <label>
+                        <input type="radio" name="radio" class="real__checkbox">
+                        <span class="fake__radio"></span>
+                        Сетевые
+                    </label>
+                </fieldset>
+                <button type="button" class="form__btn">
+                    ПОКАЗАТЬ
+                </button>
+            </form>
+
+            <div class="shop__block">
+                <header class="custom__header">
+                    <p>Сортировка</p>
+                    <ul class="sorting__list">
+                        <li>
+                            <a href="#" class="sorting__btn active">
+                                По цене
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="sorting__btn">
+                                ПО ТИПУ
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="sorting__btn">
+                                ПО ФУНКЦИОНАЛУ
+                            </a>
+                        </li>
+                    </ul>
+                </header>
+            </div>
+        </div>
+    </main>
+
+    <footer class="main__footer">
+        <div class="container">
+            <div class="index-columns">
+                <div class="footer__col--1">
+                    <a href="#" class="logo__link">
+                        <img src="assets/images/logo/technomark.png" alt="Логотип компании 'Technomark'">
+                    </a>
+                
+                <p class="footer__info">
+                    г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
++7 (812) 555-05-55
+                </p>
+                </div>
+                <div class="footer__col--2">
+                    <ul class="footer__nav--list">
+                        <li>
+                            <a href="#" class="footer__link">
+                                Компания
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__link">
+                                Новости
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__link">
+                                Каталог
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__link">
+                                Доставка
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__link">
+                                Контакты
+                            </a>
+                        </li>
+                    </ul>
+
+                    <ul class="footer__nav--list2">
+                        <li>
+                            <a href="#" class="footer__link">
+                                Материалы
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__link">
+                                Техника
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__link">
+                                Инструмент
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__link">
+                                Спецпредложения
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <footer class="footer__inner">
+            <div class="container">
+                <p class="footer__inner_info">
+                    © 2010–2019 Компания «Техномарт»<br>
+    Все права защищены
+                </p>
+                <div class="index-columns">
+                    <ul class="social__list">
+                        <li>
+                            <a href="#">
+                                vkontakte
+                                <img src="assets/images/social-icons/vk-icon.png" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                facebook
+                                <img src="assets/images/social-icons/fb-icon.png" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                instagram
+                                <img src="assets/images/social-icons/insta-icon.png" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                    <div>
+                        <p class="footer__text">
+                            Обратная связь
+                            <a>mail@htmlacademy.ru</a>
+                        </p>
+                        <p class="footer__text">
+                            Разработано —
+                            <a>htmlacademy.ru</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </footer>
+</body>
+</html>
