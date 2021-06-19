@@ -182,7 +182,7 @@ body{
 .work__item__desc h4{
     margin-top: 20px;
 }
-.custom__btn--1{
+.site__link{
     font-weight: 300;
     font-size: 30px;
     display: block;
@@ -192,8 +192,8 @@ body{
     color: rgba(0, 0, 0, .5);
     transition: background-color .2s, border-color .2s, color .2s;
 }
-.custom__btn--1:hover,
-.custom__btn--1:focus{
+.site__link:hover,
+.site__link:focus{
     color: rgba(0, 0, 0, 1);
 }
 .work__item__desc:focus-within,
@@ -201,9 +201,8 @@ body{
     opacity: 1;
 }
 
-.custom__btn--1:active{
-    background-color: rgba(255, 255 ,255,  0);
-    border-color: black;
+.site__link:active{
+    color: rgba(0, 0, 0, .2);
 }
 
 .main__footer{
