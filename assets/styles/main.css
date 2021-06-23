@@ -32,8 +32,22 @@ body{
 }
 
 .main__header{
-    border-bottom: black 1px solid;
+    position: relative;
 }
+
+.main__header::after{
+    content: "";
+    position: absolute;
+    bottom: 0;;
+    left: 50%;
+    width: 100%;
+    height: 1px;
+    background-color: #000;
+    animation: header-width-an .7s ease-in;
+    transform: translate(-50%, -50%);
+}
+
+
 
 .main_nav{
     display: flex;
@@ -136,15 +150,16 @@ body{
     overflow: hidden;
     margin: 23px 23px;
     box-shadow: 0 5px 15px 0px rgba(0 0 0 / 30%);
-    transition: box-shadow .2s;
+    transition: box-shadow .2s, transform .2s;
 }
 
-.work__list__item:hover{
-    box-shadow: 0 5px 60px 0px rgba(0 0 0 / 60%);
-}
+.work__list__item:hover,
 .work__list__item:focus-within{
     box-shadow: 0 5px 60px 0px rgba(0 0 0 / 60%);
+    position: relative;
+    transform: translateY(-10px);
 }
+
 
 
 .work__list__item img{
@@ -169,11 +184,7 @@ body{
 }
 
 
-.work__list__item:hover .work__item__desc{
-    display: flex;
-    opacity: 1;
-}
-
+.work__list__item:hover .work__item__desc,
 .work__list__item:focus .work__item__desc{
     display: flex;
     opacity: 1;
@@ -231,6 +242,10 @@ body{
     color: #2c15ca;
 }
 
+.main__footer a:active{
+    color: #8c8c8c;
+}
+
 .copyright{
     margin-top: auto;
     margin-left: auto;
@@ -243,7 +258,7 @@ body{
     padding: 0 5px;
 }
 
-.heart__text img{
+.heart__icon{
     position: absolute;
     top: 50%;
     left: 50%;
@@ -251,8 +266,11 @@ body{
     transform: translate(-50%, -50%);
 }
 
-
-
+.heart__icon.active{
+    animation: scale .4s;
+    animation-delay: 1s;
+    Animation-iteration-count: 3;
+}
 
 @media (max-width: 580px){
     .main__footer .container{
@@ -286,5 +304,26 @@ body{
     }
     .nav__list a{
         margin: 15px;
+    }
+}
+
+@keyframes header-width-an{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 100%;
+    }
+}
+
+@keyframes scale{
+    0%{
+
+    }
+    50%{
+        width: 120px;
+    }
+    100%{
+        width: 110px;
     }
 }
