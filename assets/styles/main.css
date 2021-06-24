@@ -143,7 +143,6 @@ body{
     margin-top: 30px;
 }
 .work__list__item{
-    display: block;
     position: relative;
     width: 280px;
     height: 350px;
@@ -151,7 +150,9 @@ body{
     margin: 23px 23px;
     box-shadow: 0 5px 15px 0px rgba(0 0 0 / 30%);
     transition: box-shadow .2s, transform .2s;
+    animation-delay: 0;
 }
+
 
 .work__list__item:hover,
 .work__list__item:focus-within{
@@ -181,6 +182,7 @@ body{
     background-color: rgba(255, 255, 255, .9);
     padding: 30px 10px;
     transition: opacity .2s;
+    
 }
 
 
@@ -316,6 +318,14 @@ body{
     }
 }
 
+@keyframes visible{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
 @keyframes scale{
     0%{
 
