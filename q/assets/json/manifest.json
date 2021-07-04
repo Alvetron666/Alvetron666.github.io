@@ -1,0 +1,39 @@
+{
+    "name": "Аренда помещений", 
+    "short_name": "Аренда",
+    "display": "standalone",
+    "background_color": "#FFFFFF",
+    "theme_color": "#FFFFFF",
+    "icons": [
+     {
+      "src": "../favicon/favicon16",
+      "sizes": "16x16",
+      "type": "image\/png"
+     },
+     {
+      "src": "../favicon/favicon28",
+      "sizes": "28x28",
+      "type": "image\/png"
+     },
+     {
+      "src": "../favicon/favicon32",
+      "sizes": "32x32",
+      "type": "image\/png"
+     },
+     {
+      "src": "../favicon/favicon96",
+      "sizes": "96x96",
+      "type": "image\/png"
+     },
+     {
+      "src": "../favicon/favicon120",
+      "sizes": "120x120",
+      "type": "image\/png"
+     },
+     {
+      "src": "../favicon/favicon150",
+      "sizes": "150x150",
+      "type": "image\/png"
+     }
+    ]
+   }
