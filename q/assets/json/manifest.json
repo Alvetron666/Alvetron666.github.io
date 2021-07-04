@@ -4,7 +4,7 @@
     "display": "standalone",
     "background_color": "#FFFFFF",
     "theme_color": "#FFFFFF",
-    "start_url": "../../index.html",
+    "start_url": "https://alvetron666.github.io/q/",
     "icons": [
      {
       "src": "../favicon/favicon16.png",
