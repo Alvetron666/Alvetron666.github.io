@@ -1,0 +1,16 @@
+{
+    "name": "Аренда помещений",
+    "short_name": "Аренда",
+    "start_url": "/index.html",
+    "display": "standalone",
+    "background_color": "#FFFFFF",
+    "theme_color": "#FFFFFF",
+    "orientation": "portrait-primary",
+    "icons": [
+        {
+            "src": "/assets/favicon/favicon32.png",
+            "type": "image/png",
+            "sizes": "32x32"
+        }
+    ]
+}
