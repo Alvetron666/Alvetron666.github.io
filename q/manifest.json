@@ -2,7 +2,6 @@
     "name": "Аренда помещений",
     "short_name": "Аренда",
     "start_url": "/index.html",
-    "scope": "/",
     "display": "standalone",
     "background_color": "#FFFFFF",
     "theme_color": "#FFFFFF",
