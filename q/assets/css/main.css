@@ -10,6 +10,7 @@ a{
 }
 h1,h2,h3,h4,h5,h6,p{
     margin: 0;
+    word-wrap: break-word;
 }
 
 ul{
@@ -31,7 +32,7 @@ body{
 }
 
 .container{
-    width: 1020px;
+    max-width: 1020px;
     height: 100%;
     margin: 0 auto;
 }
@@ -46,6 +47,12 @@ body{
 .main__header{
     width: 100%;
     z-index: 999;
+}
+
+.main__header.active{
+    position: fixed;
+    z-index: 1000;
+    animation: downSlide .2s linear;
 }
 
 .header__info{
@@ -88,9 +95,68 @@ body{
 }
 
 .main__nav{
+    display: flex;
+    flex-direction: column;
     padding: 0 10px;
     border-bottom: solid 4px #000;
     background-color: #fff;
+}
+
+.burger__menu{
+    display: none;
+    cursor: pointer;
+    background-color: white;
+    width: 40px;
+    height: 30px;
+    border: 0;
+    position: relative;
+    margin: 10px auto;
+}
+
+.burger__line{
+    width: 100%;
+    height: 3px;
+    background-color: #000;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+
+}
+
+.burger__menu::before,
+.burger__menu::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #000;
+    transition: transform .2s;
+}
+
+.burger__menu::before{
+    top: 0;
+}
+
+.burger__menu::after{
+    bottom: 0;
+}
+
+.burger__menu.active .burger__line{
+    display: none;
+}
+
+.burger__menu.active::before{
+    top: calc(50% - 1.5px);
+    left: calc(50% - 50%);
+    transform: rotate( 45deg);
+}
+
+.burger__menu.active::after{
+    bottom: calc(50% - 1.5px);
+    left: calc(50% - 50%);
+    transform: rotate(-45deg);
 }
 
 .links__list{
@@ -127,21 +193,25 @@ body{
 }
 
 .main .container{
-    width: 1150px;
+    max-width: 1150px;
 }
 
 .rent__section{
     display: flex;
+    flex-wrap: wrap;
     background-color: #c7c7c7;
+    padding-top: 10px;
     padding-bottom: 40px;
 }
 
 .rent__section iframe{
+    width: 100%;
+    height: 100%;
     border: 0;
 }
 
 .rent__info{
-    width: 320px;
+    max-width: 320px;
     margin-top: 5px;
     margin-left: 20px;
     color: rgb(65, 65, 65);
@@ -175,30 +245,31 @@ body{
 }
 
 .custom__btn--1{
+    cursor: pointer;
     position: relative;
     display: block;
-    padding: 10px 40px;
+    padding: 0;
     margin-bottom: 25px;
-    font-size: 18px;
-    text-align: center;
-    background-color: rgba(179, 0, 0);
     border: 0;
-    color: rgba(255, 255, 255, 1);
     border-radius: 5px;
-    transition: background-color .2s, color .2s;
-}
-.custom__btn--1::before{
-    content: "";
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    left: 0;
-    top: -2px;
-    
+    box-shadow: 0 4px 0 0 #730303;
 }
 
-.custom__btn--1:hover,
-.custom__btn--1:focus{
+.custom__btn_inner-1{
+    display: block;
+    padding: 10px 40px;
+    font-size: 18px;
+    text-align: center;
+    border-radius: 5px;
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(179, 0, 0);
+    transition: background-color .2s, color .2s, transform .2s;
+}
+
+
+.custom__btn--1:hover .custom__btn_inner-1,
+.custom__btn--1:focus .custom__btn_inner-1{
+    transform: translateY(5px);
     background-color: #e60505;
 }
 
@@ -331,7 +402,7 @@ body{
     align-items: center;
     justify-content: center;
     width: 100%;
-    padding: 5px 0;
+    margin: 20px 0;
     color: rgba(0, 0, 0, .3);
     
 }
@@ -400,7 +471,7 @@ body{
 }
 
 .info__text{
-    width: 640px;
+    max-width: 640px;
     font-style: italic;
     font-weight: 600;
     text-align: justify;
@@ -432,13 +503,16 @@ body{
 
 .section__contact .container2{
     display: flex;
+    flex-wrap: wrap;
+    
 }
 
-.section__contact iframe{
-    min-width: 570px;
+.contact__map{
+    flex-grow: 1;
 }
 
 .contact__column{
+    max-width: 430px;
     margin-left: 30px;
     padding: 10px 0 0 30px;
 }
@@ -501,13 +575,13 @@ body{
 
 .way__item{
     position: relative;
-    width: 300px;
+    max-width: 300px;
     margin: 20px;
 }
 
 .way__item figure{
     position: relative;
-    width: 313px;
+    max-width: 313px;
     height: 250px;
     overflow: hidden;
 }
@@ -543,7 +617,8 @@ body{
     fill: #fff;
 }
 
-.way__marker p{
+.way__marker span{
+    display: block;
     position: relative;
     z-index: 1000;
     text-align: center;
@@ -574,6 +649,7 @@ body{
 
 .up__btn{
     cursor: pointer;
+    font-size: inherit;
     position: relative;
     left: 50%;
     transform: translateX(-50%);
@@ -633,4 +709,129 @@ body{
 
 .site__creator a:active{
     opacity: .5;
+}
+
+@keyframes downSlide{
+    0%{
+        transform: translateY(-150px);
+    }100%{
+        transform: translateY(0);
+    }
+}
+
+
+@media(max-width: 1050px){
+    body{
+        font-size: 18px;
+    }
+    .header__info .container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header__info h2{
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .header__info_inner a{
+        margin: 5px 10px;
+        font-size: 20px;
+        
+    }
+
+    .links__list{
+        display: none;
+    }
+    
+    .burger__menu{
+        display: block;
+    }
+
+
+    .rent__section{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .rent__section_map{
+        width: 600px;
+        height: 400px;
+    }
+
+    
+    .rent__info{
+        flex-direction: column;
+        align-items: center;
+        margin: 20px auto;
+    }
+    
+    .rent__info h2{
+        font-size: 26px;
+    }
+   
+    .way__list{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .input__label{
+        font-size: 15px;
+    }
+
+    .submit__label{
+        font-size: 16px;
+    }
+
+    .contact__map{
+        width: 50%;
+        height: 300px;
+        margin: 0 auto;
+        flex-grow: 0;
+    }
+   
+    .section__contact .container2{
+        max-width: 600px;
+    }
+
+    .contact__main__text{
+        text-align: center;
+    }
+
+    .contact__column{
+        margin: 20px auto;
+    }
+
+    .contact__item h5{
+        font-size: 15px;
+    }
+    
+    .red__text{
+        font-size: 15px;
+    }
+  
+}
+
+@media(max-width: 760px){
+    .main .container{
+        max-width: 400px;
+    }
+    .rent__section img{
+        width: 100%;
+    }
+
+    .main .container > div{
+        width: 100%;
+    }
+    
+    .rent__section_map{
+        width: 100%;
+        height: 200px;
+    }
+}
+
+@media(max-width: 590px){
+    .header__info_inner a{
+        margin: 0 auto;
+    }
 }

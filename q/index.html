@@ -3,21 +3,21 @@
     <head>
         <!-- meta default -->
         <meta charset="UTF-8">
-        <meta charset="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
         <meta name="description" content=""> <!-- Описание сайта -->
         <meta name="keywords" content=""> <!-- Ключевые слова страницы-->
         <meta name = "author" content = "arenda-pomeshcheniya.spb.ru"> <!-- Автор -->
-        <meta name = "creator" content = "bocache-web"> <!-- Создатель -->
-        <meta name = "publisher" content = "bocache-web"> <!-- Ключевые слова страницы-->
+        <meta name = "creator" content = "Alvetron"> <!-- Создатель сайта -->
+        <meta name = "publisher" content = "bocache-web"> <!-- Кем опубликован-->
         
         <!-- meta OG -->
-        <meta property="og:type" content="website">
-        <meta property="og:site_name" content="Название сайта">
-        <meta property="og:title" content="Заголовок">
-        <meta property="og:description" content="Описание.">
+        <meta property="og:type" content="website"> 
+        <meta property="og:site_name" content="Название сайта"> <!-- Название сайта-->
+        <meta property="og:title" content="Заголовок"> <!-- Заголовок сайта(Если не писать, возьмём h1!)-->
+        <meta property="og:description" content="Описание."> <!-- Описание сайта -->
         <meta property="og:url" content="http://example.com/page.html">
-        <meta property="og:locale" content="ru_RU">
+        <meta property="og:locale" content="ru_RU"> <!-- Язык контента -->
         <meta property="og:image" content="http://example.com/img.jpg">
         <meta property="og:image:width" content="968">
         <meta property="og:image:height" content="504">
@@ -35,14 +35,6 @@
        <!-- Подключение стилей css-->
         <link rel="stylesheet" href="assets/css/main.css">
         <title>Аренда помещений</title>
-
-        <!-- meta bot 
-        <meta name = "googlebot" content = "index, follow">
-        <meta name = "robots" content = "index, follow"> -->
-
-        <!-- meta skype
-        <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE" />-->
-    
     </head>
     <body>
         <header class="main__header">
@@ -69,6 +61,9 @@
             
             <div class="container">
                 <nav class="main__nav">
+                    <button class="burger__menu">
+                        <span class="burger__line"></span>
+                    </button>
                     <ul class="links__list">
                         <li>
                             <a href="#" class="nav__link active">АРЕНДА на ТРЕФОЛЕВА, 2</a>
@@ -103,7 +98,7 @@
                 <section class="rent__section">
                     <img src="assets/img/section-rent/arenda.jpg" alt="Баннер аренды помещений / мест на улице Трефолева 2">
                     <div>
-                        <div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/2/saint-petersburg/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Санкт‑Петербург</a><a href="https://yandex.ru/maps/2/saint-petersburg/?from=api-maps&ll=30.279844%2C59.888422&mode=usermaps&origin=jsapi_2_1_78&um=constructor%3A36670620bf7b597e6f27616f2dc76a79ed1dda54bd5f40fac210d96c021376c3&utm_medium=mapframe&utm_source=maps&z=18" style="color:#eee;font-size:12px;position:absolute;top:14px;">Яндекс.Карты — транспорт, навигация, поиск мест</a><iframe src="https://yandex.ru/map-widget/v1/-/CCUeFUquDB" width="425" height="300" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
+                        <div style="position:relative;overflow:hidden;" class="rent__section_map"><a href="https://yandex.ru/maps/2/saint-petersburg/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Санкт‑Петербург</a><a href="https://yandex.ru/maps/2/saint-petersburg/?from=api-maps&ll=30.279844%2C59.888422&mode=usermaps&origin=jsapi_2_1_78&um=constructor%3A36670620bf7b597e6f27616f2dc76a79ed1dda54bd5f40fac210d96c021376c3&utm_medium=mapframe&utm_source=maps&z=18" style="color:#eee;font-size:12px;position:absolute;top:14px;">Яндекс.Карты — транспорт, навигация, поиск мест</a><iframe src="https://yandex.ru/map-widget/v1/-/CCUeFUquDB"  width="425" height="300"  frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
                         
                         <div class="rent__info">
                             <h2>Аренда от 20 до 140 кв.м </h2>
@@ -122,11 +117,10 @@
             <div class="call__us__block">
                 <p class="price__info">Позвоните , что бы узнать об актуальных предложениях и ценах!</p>
                 
-                    <a href="tel:+79112189669" class="custom__btn--1">
-                        <span class="custom__btn_inner-1">позвонить +7 911 218-96-69</span>
-                    </a>
-               
-                
+                <a href="tel:+79112189669" class="custom__btn--1">
+                    <span class="custom__btn_inner-1">позвонить +7 911 218-96-69</span>
+                </a>
+
                 <section class="section__info">
                     <h3>
                         НЕБОЛЬШИЕ производственные ПОМЕЩЕНИЯ и/или УЧАСТОК земли
@@ -175,12 +169,15 @@
 
                    <label class="submit__label">
                         <span class="custom__checkbox">
-                           <input type="checkbox" class="real__checkbox">
+                           <input type="checkbox" class="real__checkbox" name="checkbox">
                            <span type="checkbox" class="fake__checkbox"></span>
                         </span>
                         <p>Нажимая "Отправить", даю согласие на обработку персональной информации <a href="#">Подробнее</a></p>
                     </label>
-                    <button type="submit" class="custom__btn--1">ОТПРАВИТЬ</button>
+                    
+                    <button type="submit" href="tel:+79112189669" class="custom__btn--1">
+                        <span class="custom__btn_inner-1">ОТПРАВИТЬ</span>
+                    </button>
                 </div>
             </form>
 
@@ -194,9 +191,7 @@
 
             <section class="section__contact">
                 <div class="container2">
-                    <iframe src="https://yandex.ru/map-widget/v1/?z=12&amp;ol=biz&amp;oid=114369234746"
-                    width="570" height="610"
-                    frameborder="0"></iframe>
+                    <iframe src="https://yandex.ru/map-widget/v1/?z=12&amp;ol=biz&amp;oid=114369234746" class="contact__map" frameborder="0"></iframe>
                     <div class="contact__column">
                         <p class="contact__main__text">
                             О компании:<br>
@@ -222,7 +217,7 @@
                                 <li class="contact__item">
                                     <h5>Телефон для связи по вопросам аренды:</h5>
                                     <div class="contact__item_inner">
-                                        <svg preserveAspectRatio="xMidYMid meet" width="25" height="" data-bbox="38.999 39 122.001 122" viewBox="38.999 39 122.001 122" height="200" width="200" xmlns="http://www.w3.org/2000/svg" data-type="color" role="img">
+                                        <svg preserveAspectRatio="xMidYMid meet" width="25" height="25" data-bbox="38.999 39 122.001 122" viewBox="38.999 39 122.001 122" height="200" width="200" xmlns="http://www.w3.org/2000/svg" data-type="color" role="img">
                                             <path d="M66.248 47.383c2.234 0 4.783.813 6.746 3.742 5.289 7.88 10.39 15.304 13.215 20.359.956 1.715 1.884 6.569-1.238 10.083-2.696 3.029-5.074 3.772-6.511 5.984-.985 1.524-2.11 4.931-.259 8.848 2.213 4.678 4.913 8.52 10.838 14.54 6.018 5.917 9.859 8.615 14.546 10.829 1.53.722 2.984.99 4.276.99 2.019 0 3.647-.651 4.573-1.249 2.213-1.434 2.958-3.812 5.989-6.507 1.827-1.621 4.014-2.15 5.935-2.15 1.779 0 3.33.454 4.152.916 5.057 2.82 12.484 7.919 20.372 13.203 5.532 3.707 3.515 9.499 2.736 11.32-.783 1.821-4.788 7.847-13.4 12.352-2.37 1.239-5.497 1.974-9.288 1.974-11.935 0-30.424-7.304-52.356-29.225-28.895-28.88-32.402-51.787-27.261-61.607 4.506-8.61 10.536-12.613 12.36-13.392.854-.368 2.589-1.01 4.575-1.01zm0-8.383c-3.278 0-6.106.923-7.9 1.699C54.8 42.211 47.294 47.555 41.88 57.9c-6.765 12.922-3.295 39.381 28.762 71.419C98.22 156.883 118.998 161 128.929 161c5.024 0 9.457-.987 13.175-2.93 10.331-5.404 15.687-12.899 17.222-16.475 3.579-8.37 1.312-16.839-5.772-21.589-1.216-.813-2.421-1.623-3.606-2.42-6.566-4.414-12.769-8.585-17.35-11.141-2.239-1.252-5.244-1.975-8.238-1.977-4.382 0-8.36 1.473-11.504 4.264-2.088 1.855-3.389 3.574-4.34 4.827-.196.259-.44.582-.628.813h-.027c-.197 0-.43-.062-.694-.187-3.482-1.644-6.597-3.675-12.199-9.178-5.508-5.6-7.54-8.714-9.185-12.193-.152-.321-.191-.558-.189-.718.231-.188.557-.433.817-.63 1.255-.95 2.973-2.249 4.826-4.33 5.306-5.974 5.143-14.623 2.3-19.731-2.579-4.614-6.782-10.857-11.234-17.465-.772-1.148-1.557-2.312-2.346-3.487C76.736 41.648 71.866 39 66.248 39z"
                                             fill="#2F54DD" data-color="1"/>
                                         </svg>
@@ -289,12 +284,12 @@
                                  <svg  class="marker-icon-2" preserveAspectRatio="none" data-bbox="0 0 226.002 318.307"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 226.002 318.307" role="img" width="20" height="20">
                                     <path d="M113.008 318.307c31.188 0 57.608-10.822 79.888-33.101.635-.655.635-.655 1.276-1.277 21.009-21.644 31.83-48.057 31.83-78.624 0-26.75-10.821-56.979-31.83-90.404-2.871-4.121-5.411-8.593-8.278-12.741L114.596 0 35.653 110.138C12.099 143.245 0 174.751 0 205.305c0 31.203 10.828 57.629 33.107 79.901 22.279 22.278 48.706 33.101 79.901 33.101z"/>
                                  </svg>
-                                 <p>1</p>
+                                 <span>1</span>
                             </span>  
                             <figure>            
                                 <img  src="assets/img/section-way/1.jpg" alt="Фото вьезда с Огродного переулка.">
                             </figure>
-                            <p>въезд с Огродного переулка.</p>
+                            <p class="way__desc">въезд с Огродного переулка.</p>
                         </li>
                         <li class="way__item">
                             <span class="way__marker">
@@ -304,12 +299,12 @@
                                  <svg  class="marker-icon-2" preserveAspectRatio="none" data-bbox="0 0 226.002 318.307"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 226.002 318.307" role="img" width="20" height="20">
                                     <path d="M113.008 318.307c31.188 0 57.608-10.822 79.888-33.101.635-.655.635-.655 1.276-1.277 21.009-21.644 31.83-48.057 31.83-78.624 0-26.75-10.821-56.979-31.83-90.404-2.871-4.121-5.411-8.593-8.278-12.741L114.596 0 35.653 110.138C12.099 143.245 0 174.751 0 205.305c0 31.203 10.828 57.629 33.107 79.901 22.279 22.278 48.706 33.101 79.901 33.101z"/>
                                  </svg>
-                                 <p>2</p>
+                                 <span>2</span>
                             </span>  
                             <figure>
                                 <img  src="assets/img/section-way/2.jpg" alt="Фото вьезда с Огродного переулка.">
                             </figure>
-                            <p>охранно-пропускная система завода Армалит</p>
+                            <p class="way__desc">охранно-пропускная система завода Армалит</p>
                         </li>
                         <li class="way__item">
                             <span class="way__marker marker-pos-3">
@@ -319,7 +314,7 @@
                                  <svg  class="marker-icon-2" preserveAspectRatio="none" data-bbox="0 0 226.002 318.307"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 226.002 318.307" role="img" width="20" height="20">
                                     <path d="M113.008 318.307c31.188 0 57.608-10.822 79.888-33.101.635-.655.635-.655 1.276-1.277 21.009-21.644 31.83-48.057 31.83-78.624 0-26.75-10.821-56.979-31.83-90.404-2.871-4.121-5.411-8.593-8.278-12.741L114.596 0 35.653 110.138C12.099 143.245 0 174.751 0 205.305c0 31.203 10.828 57.629 33.107 79.901 22.279 22.278 48.706 33.101 79.901 33.101z"/>
                                  </svg>
-                                 <p>3</p>
+                                 <span>3</span>
                             </span>   
                             <figure>
                                 <img  src="assets/img/section-way/3.jpg" alt="Фото вьезда с Огродного переулка.">
