@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <input type="text" value="lonDon">
+    <button type="button">click</button>
+    <div class="out">out</div>
+
+    <script>
+        let btn = document.querySelector('button');
+        let input = document.querySelector('input');
+        let out = document.querySelector('.out');
+
+
+        let reqinfo = {
+            url : 'http://api.openweathermap.org/data/2.5/',
+            apikey : 'c3e4df96faf834664217c9bb7db6bdf2',
+        }
+            
+        
+        function f1(){
+            let inputV = input.value
+           let request = new XMLHttpRequest();
+            request.open('GET', `http://api.openweathermap.org/data/2.5/weather?q=${input.value}&appid=c3e4df96faf834664217c9bb7db6bdf2`);
+            request.responseType = 'json';
+            request.send();
+
+            request.onload = () =>{
+                let resp = request.response;
+                out.textContent = resp.id;
+            }
+ 
+        }
+
+        btn.onclick = f1;
+
+
+
+
+    </script>
+</body>
+</html>
