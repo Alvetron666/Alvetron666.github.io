@@ -10,7 +10,7 @@ $(document).ready(function() {
         }
     });
     $(".next-step").click(function(e) {
-
+        scrollTo(0, 0)
         var $active = $('.wizard .nav-tabs li.active');
         $active.next().removeClass('disabled');
         nextTab($active);
