@@ -1,0 +1,44 @@
+html,
+body{
+    height: 100%;
+}
+
+body{
+    font-family: "Montserrat";
+    padding: 0;
+	margin: 0;
+    display: flex;
+}
+
+.content{
+    margin: auto; 
+    text-align: center;
+    width: 370px;
+}
+.logo{
+    display: block;
+    margin-bottom: 30px;
+}
+
+.content p{
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 30px;
+   
+}
+.link-download{ 
+    display: block;
+    font-size: 18px;
+    color: #f4f4f4;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 15px 30px;
+    background: linear-gradient(0deg, #00ad6b 0%, #00d885 100%);
+    border-radius: 30px;
+}
+
+
+@media (max-width: 500px){
+
+}
+
