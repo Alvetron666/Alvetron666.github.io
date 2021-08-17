@@ -215,7 +215,6 @@ section {
 	-ms-flex-align: center;
 	align-items: center;
 }
-
 .advantages-item {
 	width: 100%;
 	max-width: 380px;
@@ -1575,7 +1574,6 @@ section {
 	#wizard{
 		padding: 0;
 		background-color: #fff;
-		padding-bottom: 2000px;
 	}
 	.right-side-quiz__mob{
 		display: flex;

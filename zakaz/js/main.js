@@ -56,6 +56,7 @@ let quizBtn = document.querySelector('.wizar-quiz')
 let callbackForm = document.querySelector('.callback-form')
 let callbackCloseBtn = callbackForm.querySelector('.callback-close');
 let body = document.querySelector('body');
+let advantageBlock = document.querySelector('.intro-mobile__bottom');
 
 
 
@@ -81,6 +82,11 @@ calcBtn.forEach((item) => {
         scrollTo(0, 0)
         wizard.classList.add('wizard--active')
         phone.style.display = 'none'
+        console.log(window.innerWidth)
+        if(window.innerWidth < 500){
+            console.log(1);
+            advantageBlock.style.display = 'none';
+        }
     })
 })
 
@@ -105,3 +111,5 @@ callbackBtn.forEach( item => {
 callbackCloseBtn.onclick = () => {
     callbackForm.classList.remove('active');
 }
+document.querySelector('.intro__content').style.background = 'red'
+
