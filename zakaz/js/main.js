@@ -51,7 +51,7 @@ let firstPane = document.querySelector('.tab-pane--first')
 let lastPane = document.querySelector('.wizard-finish-tab')
 let phone = document.querySelector('.header__phone--mob')
 let item = document.querySelectorAll('.country-item')
-let callbackBtn = document.querySelector('.header__callback')
+let callbackBtn = document.querySelectorAll('.header__callback')
 let quizBtn = document.querySelector('.wizar-quiz')
 let callbackForm = document.querySelector('.callback-form')
 let callbackCloseBtn = callbackForm.querySelector('.callback-close');
@@ -96,9 +96,11 @@ quizBtn.onclick = () =>{
 }
 
 
-callbackBtn.onclick = () =>{
-    callbackForm.classList.add('active');
-}
+callbackBtn.forEach( item => {
+    item.onclick = () =>{
+        callbackForm.classList.add('active');
+    }
+})
 
 callbackCloseBtn.onclick = () => {
     callbackForm.classList.remove('active');
