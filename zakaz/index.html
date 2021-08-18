@@ -10,6 +10,23 @@
 		<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="css/bootstrap.min.css">
 		<link rel="stylesheet" href="css/main.css"> 
+	<!-- Facebook Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '834910363878404');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=834910363878404&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Facebook Pixel Code -->
 	</head>
 
 	<body>
@@ -488,7 +505,7 @@
 													<input type="text" class="wizard-input phone-mask" placeholder="+7 (___) ___ - __ - __" name="phone" required> </div>
 												<input type="hidden" value="Новая заявка" name="formData">
 												<button type="submit" class="wizard-btn wizard-main-btn wizar-quiz"><span class="ink animate"></span> получить расчёт </button>
-												<div class="personal-info">Нажимая кнопку вы даете согласие на <a href="privacy.html" data-toggle="modal">обработку <br>
+												<div class="personal-info">Нажимая кнопку вы даете согласие на <a href="#openModal" data-toggle="modal">обработку <br>
                                        персональных данных
                                        </a> </div>
 											</div>
@@ -633,14 +650,14 @@
 			<div class="wizard-finish-tab-wrapper">
 				<div class="row">
 					<div class="text-center">
-						<div class="finish-title">Спасибо, что оставили заявку наш менеджер скоро с Вами свяжется. Время работы 9:00-20:00 </div>
+						<div class="finish-title">Оставьте ваши контакты и менеджер с вами свяжется. Время работы 9:00-20:00</div>
 					
 							<input type="text" class="wizard-input" placeholder="Введите ваше имя" name="name" required> 
 							<input type="text" class="wizard-input phone-mask" placeholder="+7 (___) ___ - __ - __" name="phone" required> 
 					
 						<input type="hidden" value="Новая заявка" name="formData">
 						<button type="submit" class="callback-send-btn"><span class="ink animate"></span> Отправить заявку </button>
-						<div class="personal-info">Нажимая кнопку вы даете согласие на <a href="privacy.html" data-toggle="modal">обработку <br>
+						<div class="personal-info">Нажимая кнопку вы даете согласие на <a href="#openModal" data-toggle="modal">обработку <br>
 			   персональных данных
 			   </a> </div>
 					</div>

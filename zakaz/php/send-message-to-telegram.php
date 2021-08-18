@@ -4,8 +4,8 @@
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
-    $token = "1960091669:AAFulrQv3h_Z50dDJ8CUuNRmR8IGjbb8CtY";
-    $chat_id = "-1001549803096";
+    $token = "1920990488:AAE37UFREY2yD4VVnYKAgNXSZ-z8QKWvmIk";
+    $chat_id = "-554297203";
 
     if (!empty($_POST['name']) && !empty($_POST['phone'])){
         $bot_url = "https://api.telegram.org/bot{$token}/";
