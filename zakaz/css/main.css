@@ -1479,9 +1479,7 @@ section {
         height: 260px;
 		position: absolute;
 		left: -25px;
-		-webkit-transform: translateY(-137px);
-		-ms-transform: translateY(-137px);
-		transform: translateY(-137px);
+
 		bottom: 0;
 		z-index: 1;
 	}
@@ -1493,9 +1491,7 @@ section {
 		background-position: center;
 		width: 150px;
         height: 260px;
-		-webkit-transform: translateY(-137px);
-		-ms-transform: translateY(-137px);
-		transform: translateY(-137px);
+
 		position: absolute;
 		right: 0;
 		bottom: 0;
@@ -1540,6 +1536,7 @@ section {
 		background-repeat: no-repeat;
 		background-size: cover;
 		background-position: top;
+		position: relative;
 	}
 	.intro-mobile--head__img {
 		background: url(../img/pictures/intro-mob-img.png);
@@ -1551,14 +1548,12 @@ section {
 		position: absolute;
 		bottom: 0;
 		right: 0;
-		-webkit-transform: translateY(-129px);
-		-ms-transform: translateY(-129px);
-		transform: translateY(-200px);
 	}
-	.intro-mobile--head::after, 
-	.intro-mobile--head::before{
-		transform: translateY(-190px);
-	}
+	.intro-mobile--head::after,
+	 .intro-mobile--head::before{
+		 
+	 }
+
 	.header__mob {
 		padding: 0 15px;
 	}
@@ -1631,29 +1626,6 @@ section {
 	.finish-title {
 		font-size: 15px;
 	}
-	.intro-mobile--head {
-		height: 400px;
-		background: url(../img/pictures/intro-mob.png);
-		background-repeat: no-repeat;
-		background-size: cover;
-		background-position: top;
-	}
-	.intro-mobile--head__img {
-		background: url(../img/pictures/intro-mob-img.png);
-		background-repeat: no-repeat;
-		background-size: contain;
-		background-position: top;
-		width: 314px;
-		height: 367px;
-		position: absolute;
-		bottom: 0;
-		right: 0;
-		-webkit-transform: translateY(-129px);
-		-ms-transform: translateY(-129px);
-		transform: translateY(-140px);
-	}
-	.intro-mobile--head::after, 
-	.intro-mobile--head::before{
-		transform: translateY(-158px);
-	}
+
+
 }
