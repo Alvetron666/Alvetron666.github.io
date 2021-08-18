@@ -1531,7 +1531,7 @@ section {
 		padding-bottom: 40px;
 	}
 	.intro-mobile--head {
-		height: 350px;
+		height: 400px;
 		background: url(../img/pictures/intro-mob.png);
 		background-repeat: no-repeat;
 		background-size: cover;
@@ -1549,10 +1549,6 @@ section {
 		bottom: 0;
 		right: 0;
 	}
-	.intro-mobile--head::after,
-	 .intro-mobile--head::before{
-		 
-	 }
 
 	.header__mob {
 		padding: 0 15px;
