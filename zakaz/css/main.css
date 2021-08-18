@@ -1535,7 +1535,7 @@ section {
 		padding-bottom: 40px;
 	}
 	.intro-mobile--head {
-		height: 530px;
+		height: 450px;
 		background: url(../img/pictures/intro-mob.png);
 		background-repeat: no-repeat;
 		background-size: cover;
@@ -1553,7 +1553,11 @@ section {
 		right: 0;
 		-webkit-transform: translateY(-129px);
 		-ms-transform: translateY(-129px);
-		transform: translateY(-129px);
+		transform: translateY(-250px);
+	}
+	.intro-mobile--head::after, 
+	.intro-mobile--head::before{
+		transform: translateY(-254px);
 	}
 	.header__mob {
 		padding: 0 15px;
@@ -1618,12 +1622,6 @@ section {
 }
 
 @media (max-width: 400px) {
-	.intro-mobile--head:after,
-	.intro-mobile--head:before {
-		-webkit-transform: translateY(-107px);
-		-ms-transform: translateY(-107px);
-		transform: translateY(-107px);
-	}
 	.wizard-finish-tab-wrapper {
 		padding: 60px 15px;
 	}
