@@ -10,8 +10,12 @@ $(document).ready(function() {
         }
     });
 
-
-
+    $(".next-step").click(function(e) {
+        scrollTo(0, 0)
+        var $active = $('.wizard .nav-tabs li.active');
+        $active.next().removeClass('disabled');
+        nextTab($active);
+    });
 
     $(".prev-step").click(function(e) {
 
@@ -33,7 +37,7 @@ function nextTab(elem) {
 function prevTab(elem) {
     $(elem).prev().find('a[data-toggle="tab"]').click();
 }
-
+ 
 let checkboxAll = document.querySelectorAll('.checkbox')
 checkboxAll.forEach((item) => {
     item.addEventListener('click', function() {
@@ -54,11 +58,10 @@ let callbackForm = document.querySelector('.callback-form')
 let callbackCloseBtn = callbackForm.querySelector('.callback-close')
 let body = document.querySelector('body')
 let advantageBlock = document.querySelector('.intro-mobile__bottom')
-let nexStepBtn = document.querySelectorAll('.next-step')
-let tabPanel = document.querySelectorAll('.tab-pane')
 let countryItems = step1.querySelectorAll('.country-item input')
 let errorModal = document.querySelector('.error');
 let errorCloseBtn = document.querySelector('.error-close');
+
 
 
 
@@ -116,45 +119,4 @@ errorCloseBtn.onclick = () =>{
     errorModal.classList.remove('active');
 }
 
-
-let currentStepBtn
-nexStepBtn.forEach( item => {
-    item.onclick = () =>{
-        tabPanelActiveChecker()
-    }
-})
-
-function tabPanelActiveChecker() {
-    tabPanel.forEach(item => {
-        
-        if(item.classList.contains('active')){
-            let count = 0;
-            currentItem = item;
-
-            inputs = currentItem.querySelectorAll('input');
-
-
-            inputs.forEach(input => {
-                if(input.checked){
-                    count++
-                }
-            })
-
-            if(count === 0){
-                errorModal.classList.add('active');   
-            }else{
-                console.log(1)
-                $(".next-step").click(function(e) {
-                    scrollTo(0, 0)
-                    var $active = $('.wizard .nav-tabs li.active');
-                    $active.next().removeClass('disabled');
-                    nextTab($active);
-            
-                });
-            }
-    
-        }
-        return 0;
-    })
-}
 
