@@ -1553,7 +1553,7 @@ section {
 		right: 0;
 		-webkit-transform: translateY(-129px);
 		-ms-transform: translateY(-129px);
-		transform: translateY(-250px);
+		transform: translateY(-210px);
 	}
 	.intro-mobile--head::after, 
 	.intro-mobile--head::before{
