@@ -1479,8 +1479,7 @@ section {
         height: 260px;
 		position: absolute;
 		left: -25px;
-
-		bottom: 0;
+		bottom: 20px;
 		z-index: 1;
 	}
 	.intro-mobile--head:after {
@@ -1494,7 +1493,7 @@ section {
 
 		position: absolute;
 		right: 0;
-		bottom: 0;
+		bottom: 20px;
 	}
 	.intro-mobile__bottom {
 		background-color: #fff;
@@ -1531,7 +1530,7 @@ section {
 		padding-bottom: 40px;
 	}
 	.intro-mobile--head {
-		height: 400px;
+		height: 430px;
 		background: url(../img/pictures/intro-mob.png);
 		background-repeat: no-repeat;
 		background-size: cover;
@@ -1546,7 +1545,7 @@ section {
 		width: 314px;
 		height: 367px;
 		position: absolute;
-		bottom: 0;
+		bottom: -15px;
 		right: 0;
 	}
 
