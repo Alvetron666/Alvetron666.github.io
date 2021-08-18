@@ -197,11 +197,9 @@ section {
 	width: 46px;
 	height: 76px;
 }
-
 .calc-btn:hover {
 	color: #f4f4f4;
 }
-
 .advantages {
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -1173,10 +1171,39 @@ section {
 	top: 25px;
 	right: 25px;
 }
+
 .callback-form input + input{
 	margin-top: 30px;
 }
 
+#quiz-form{
+	position: relative;
+}
+
+.error{
+	position: absolute;
+	left: 0;
+	right: 0;
+	z-index: 25;
+	max-width: 600px;
+	height: 140px;
+	padding: 10px 30px 10px 10px;
+	background-color: red;
+	color: #fff;
+	border-radius: 3px;
+	font-size:  26px;
+	display: none;
+}
+
+.error.active{
+	display: block;
+}
+
+.error-close{
+	position: absolute;
+	top: 5px;
+	right: 10px;
+}
 @-webkit-keyframes arrowAnimation {
 	0% {
 		-webkit-transform: translateY(0) rotate(-45deg);

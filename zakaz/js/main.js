@@ -9,13 +9,10 @@ $(document).ready(function() {
             return false;
         }
     });
-    $(".next-step").click(function(e) {
-        scrollTo(0, 0)
-        var $active = $('.wizard .nav-tabs li.active');
-        $active.next().removeClass('disabled');
-        nextTab($active);
 
-    });
+
+
+
     $(".prev-step").click(function(e) {
 
         var $active = $('.wizard .nav-tabs li.active');
@@ -54,10 +51,14 @@ let item = document.querySelectorAll('.country-item')
 let callbackBtn = document.querySelectorAll('.header__callback')
 let quizBtn = document.querySelector('.wizar-quiz')
 let callbackForm = document.querySelector('.callback-form')
-let callbackCloseBtn = callbackForm.querySelector('.callback-close');
-let body = document.querySelector('body');
-let advantageBlock = document.querySelector('.intro-mobile__bottom');
-
+let callbackCloseBtn = callbackForm.querySelector('.callback-close')
+let body = document.querySelector('body')
+let advantageBlock = document.querySelector('.intro-mobile__bottom')
+let nexStepBtn = document.querySelectorAll('.next-step')
+let tabPanel = document.querySelectorAll('.tab-pane')
+let countryItems = step1.querySelectorAll('.country-item input')
+let errorModal = document.querySelector('.error');
+let errorCloseBtn = document.querySelector('.error-close');
 
 
 
@@ -82,7 +83,6 @@ calcBtn.forEach((item) => {
         scrollTo(0, 0)
         wizard.classList.add('wizard--active')
         phone.style.display = 'none'
-        console.log(window.innerWidth)
         if(window.innerWidth < 500){
             console.log(1);
             advantageBlock.style.display = 'none';
@@ -111,5 +111,50 @@ callbackBtn.forEach( item => {
 callbackCloseBtn.onclick = () => {
     callbackForm.classList.remove('active');
 }
-document.querySelector('.intro__content').style.background = 'red'
+
+errorCloseBtn.onclick = () =>{
+    errorModal.classList.remove('active');
+}
+
+
+let currentStepBtn
+nexStepBtn.forEach( item => {
+    item.onclick = () =>{
+        tabPanelActiveChecker()
+    }
+})
+
+function tabPanelActiveChecker() {
+    tabPanel.forEach(item => {
+        
+        if(item.classList.contains('active')){
+            let count = 0;
+            currentItem = item;
+
+            inputs = currentItem.querySelectorAll('input');
+
+
+            inputs.forEach(input => {
+                if(input.checked){
+                    count++
+                }
+            })
+
+            if(count === 0){
+                errorModal.classList.add('active');   
+            }else{
+                console.log(1)
+                $(".next-step").click(function(e) {
+                    scrollTo(0, 0)
+                    var $active = $('.wizard .nav-tabs li.active');
+                    $active.next().removeClass('disabled');
+                    nextTab($active);
+            
+                });
+            }
+    
+        }
+        return 0;
+    })
+}
 
