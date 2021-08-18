@@ -1535,7 +1535,7 @@ section {
 		padding-bottom: 40px;
 	}
 	.intro-mobile--head {
-		height: 400px;
+		height: 460px;
 		background: url(../img/pictures/intro-mob.png);
 		background-repeat: no-repeat;
 		background-size: cover;
@@ -1553,11 +1553,11 @@ section {
 		right: 0;
 		-webkit-transform: translateY(-129px);
 		-ms-transform: translateY(-129px);
-		transform: translateY(-210px);
+		transform: translateY(-195px);
 	}
 	.intro-mobile--head::after, 
 	.intro-mobile--head::before{
-		transform: translateY(-254px);
+		transform: translateY(-213px);
 	}
 	.header__mob {
 		padding: 0 15px;
