@@ -59,8 +59,6 @@ let callbackCloseBtn = callbackForm.querySelector('.callback-close')
 let body = document.querySelector('body')
 let advantageBlock = document.querySelector('.intro-mobile__bottom')
 let countryItems = step1.querySelectorAll('.country-item input')
-let errorModal = document.querySelector('.error');
-let errorCloseBtn = document.querySelector('.error-close');
 
 
 
@@ -114,9 +112,4 @@ callbackBtn.forEach( item => {
 callbackCloseBtn.onclick = () => {
     callbackForm.classList.remove('active');
 }
-
-errorCloseBtn.onclick = () =>{
-    errorModal.classList.remove('active');
-}
-
 

@@ -1,0 +1,1 @@
+!function(t){t(".quiz-form").submit(function(e){e.preventDefault();let a=t("#"+t(this).attr("id"))[0],n=new FormData(a);t.ajax({url:"/../php/send-message-to-telegram.php",type:"POST",data:n,processData:!1,contentType:!1})})}(jQuery);

@@ -35,7 +35,12 @@
 			<div class="container">
 				<div class="header__wrapper">
 					<div class="header__logo">
-						<a href="#"> <img src="img/pictures/logo.png" alt="Логотип"> </a>
+						<a href="#"> 
+							<picture>
+								<source srcset="img/pictures/logo.webp" type="image/webp">
+								<img src="img/pictures/logo.png" alt="Логотип"> 
+							</picture>
+						</a>
 					</div>
 					<div class="header__text"> Турагентство </div>
 					<div class="header__contacts"> <a href="tel: +7 (977) 702-22-89" class="header__phone">+7 (977) 702-22-89</a>
@@ -67,22 +72,34 @@
 					<button type="button" class="calc-btn"> <span class="ink animate"></span>Рассчитать тур</button>
 					<div class="advantages">
 						<div class="advantages-item">
-							<div class="advantages-item__border"> <img class="advantages-item__img" src="img/pictures/adven-1.png" alt="Бесплатный трансфер до отеля">
+							<div class="advantages-item__border"> 
+								<picture>
+									<source srcset="img/pictures/adven-1.webp" type="image/webp">
+									<img class="advantages-item__img" src="img/pictures/adven-1.png" alt="Бесплатный трансфер до отеля"> 
+								</picture>
 								<div class="advantages-item__desc"> <span>Бесплатный трансфер</span>
 									<br> до отеля </div>
 							</div>
 						</div>
 						<div class="advantages-item">
-							<div class="advantages-item__border"> <img class="advantages-item__img" src="img/pictures/adven-2.png" alt="Оформляем все необходимые
-			 документы, страхование">
+							<div class="advantages-item__border">
+								<picture>
+									<source srcset="img/pictures/adven-2.webp" type="image/webp">
+									<img class="advantages-item__img" src="img/pictures/adven-2.png" alt="Оформляем все необходимые
+									документы, страхование"> 
+								</picture>
 								<div class="advantages-item__desc"> Оформляем все необходимые
 									<br> <span>документы, страхование</span> </div>
 							</div>
 						</div>
 						<div class="advantages-item">
-							<div class="advantages-item__border"> <img class="advantages-item__img" src="img/pictures/adven-3.png" alt="Остаёмся на связи с клиентами
-			 до, во время и после
-			  турпоездки">
+							<div class="advantages-item__border"> 
+								<picture>
+									<source srcset="img/pictures/adven-3.webp" type="image/webp">
+									<img class="advantages-item__img" src="img/pictures/adven-3.png" alt="Остаёмся на связи с клиентами
+									до, во время и после
+									 турпоездки"> 
+								</picture>
 								<div class="advantages-item__desc"> Остаёмся <span>на связи с клиентами</span>
 									<br> до, во время и после
 									<br> турпоездки </div>
@@ -107,22 +124,34 @@
 					<button type="button" class="calc-btn"> <span class="ink animate"></span>Рассчитать тур</button>
 					<div class="advantages">
 						<div class="advantages-item">
-							<div class="advantages-item__border"> <img class="advantages-item__img" src="img/pictures/adven-1.png" alt="Бесплатный трансфер до отеля">
+							<div class="advantages-item__border"> 
+								<picture>
+									<source srcset="img/pictures/adven-1.webp" type="image/webp">
+									<img class="advantages-item__img" src="img/pictures/adven-1.png" alt="Бесплатный трансфер до отеля">
+								</picture>
 								<div class="advantages-item__desc"> <span>Бесплатный трансфер</span>
 									<br> до отеля </div>
 							</div>
 						</div>
 						<div class="advantages-item">
-							<div class="advantages-item__border"> <img class="advantages-item__img" src="img/pictures/adven-2.png" alt="Оформляем все необходимые
-			 документы, страхование">
+							<div class="advantages-item__border">
+
+							<picture>
+								<source srcset="img/pictures/adven-2.webp" type="image/webp">
+								<img class="advantages-item__img" src="img/pictures/adven-2.png" alt="Оформляем все необходимые
+								документы, страхование">
+							</picture>
 								<div class="advantages-item__desc"> Оформляем все необходимые
 									<br> <span>документы, страхование</span> </div>
 							</div>
 						</div>
 						<div class="advantages-item">
-							<div class="advantages-item__border"> <img class="advantages-item__img" src="img/pictures/adven-3.png" alt="Остаёмся на связи с клиентами
-			 до, во время и после
-			  турпоездки">
+							<div class="advantages-item__border">
+								<picture>
+									<source srcset="img/pictures/adven-3.webp" type="image/webp">
+									<img class="advantages-item__img" src="img/pictures/adven-3.png" alt="Остаёмся на связи с клиентами
+									до, во время и после турпоездки">
+								</picture>
 								<div class="advantages-item__desc"> Остаёмся <span>на связи с клиентами</span>
 									<br> до, во время и после
 									<br> турпоездки </div>
@@ -164,11 +193,6 @@
 							</ul>
 						</div>
 						<form role="form" id="quiz-form" class="quiz-form">
-							<div class="error">
-								<a class="error-close" href="#"><img src="img/icons/close.png" alt="Закрыть"></a>
-								Упс. Кажется вы ничего не выбрали.
-								Пожалуйста выберите один из данных вариантов
-							</div>
 							<div class="tab-content">
 								<div class="tab-pane tab-pane--first active" role="tabpanel" id="step1">
 									<div class="wizard-flex">
@@ -177,8 +201,13 @@
 												<div class="right-side-quiz__head"> <span>Ответьте на 5 вопросов</span>
 													<br> и получите набор подарков
 													<br> для путешествий </div>
-												<div class="right-side-quiz__img"> <img src="img/pictures/box.png" alt="Набор подарков
-										   для путешествий"> </div>
+												<div class="right-side-quiz__img"> 
+													<picture>
+														<source srcset="img/pictures/box.webp" type="image/webp">
+														<img src="img/pictures/box.png" alt="Набор подарков
+														для путешествий">
+													</picture>
+												</div>
 											</div>
 										</div>
 										<div class="left-side-quiz">
@@ -191,33 +220,62 @@
 											</div>
 											<h3>Какие страны вы бы хотели посетить?</h3>
 											<div class="country">
-												<div class="country-item"> <img src="img/pictures/quiz-1-1.png" alt="Европа">
+												<div class="country-item"> 
+													<picture>
+														<source srcset="img/pictures/quiz-1-1.webp" type="image/webp">
+														<img src="img/pictures/quiz-1-1.png" alt="Европа">
+													</picture>
 													<input class="checkbox" type="checkbox" name="country1" value="Европа" id="country1">
 													<label class="control-label" for="country1"> Европа </label>
 												</div>
-												<div class="country-item"> <img src="img/pictures/quiz-1-2.png" alt="Азия">
+												<div class="country-item"> 
+													<picture>
+														<source srcset="img/pictures/quiz-1-2.webp" type="image/webp">
+														<img src="img/pictures/quiz-1-2.png" alt="Азия">
+													</picture>
 													<input class="checkbox" type="checkbox" name="country2" value="Азия" id="country2">
 													<label class="control-label" for="country2"> Азия </label>
 												</div>
-												<div class="country-item"> <img src="img/pictures/quiz-1-3.png" alt="Америка">
+												<div class="country-item">
+													 <picture>
+														<source srcset="img/pictures/quiz-1-3.webp" type="image/webp">
+														<img src="img/pictures/quiz-1-3.png" alt="Америка">
+													</picture>
 													<input class="checkbox" type="checkbox" name="country3" value="Америка" id="country3">
 													<label class="control-label" for="country3"> Америка </label>
 												</div>
-												<div class="country-item"> <img src="img/pictures/quiz-1-4.png" alt="Африка">
+												<div class="country-item"> 
+													<picture>
+														<source srcset="img/pictures/quiz-1-4.webp" type="image/webp">
+														<img src="img/pictures/quiz-1-4.png" alt="Африка">
+													</picture>
 													<input class="checkbox" type="checkbox" name="country4" value="Африка" id="country4">
 													<label class="control-label" for="country4"> Африка </label>
 												</div>
-												<div class="country-item"> <img src="img/pictures/quiz-1-5.png" alt="Австралия">
+												<div class="country-item"> 
+													<picture>
+														<source srcset="img/pictures/quiz-1-5.webp" type="image/webp">
+														<img src="img/pictures/quiz-1-5.png" alt="Австралия">
+													</picture>
 													<input class="checkbox" type="checkbox" name="country5" value="Австралия" id="country5">
 													<label class="control-label" for="country5"> Австралия </label>
 												</div>
-												<div class="country-item"> <img src="img/pictures/quiz-1-6.png" alt="Ваш вариант">
+												<div class="country-item">
+													 <picture>
+														<source srcset="img/pictures/quiz-1-6.webp" type="image/webp">
+														<img src="img/pictures/quiz-1-6.png" alt="Ваш вариант">
+													</picture>
 													<input class="checkbox" type="checkbox" name="country6" value="Ваш вариант" id="country6">
 													<label class="control-label" for="country6"> Ваш вариант </label>
 												</div>
 											</div>
 											<div class="wizard-btns">
-												<button type="button" class="wizard-btn wizard-main-btn pull-right next-step"> <span class="ink animate"></span> Далее <img src="img/icons/btns.png" alt=""> </button>
+												<button type="button" class="wizard-btn wizard-main-btn pull-right next-step"> <span class="ink animate"></span> Далее 
+													<picture>
+														<source srcset="img/icons/btns.webp" type="image/webp">
+														<img src="img/icons/btns.png" alt=""> 
+													</picture>
+												</button>
 											</div>
 										</div>
 										<div class="right-side-quiz">
@@ -225,8 +283,13 @@
 												<div class="right-side-quiz__head"> <span>Ответьте на 5 вопросов</span>
 													<br> и получите набор подарков
 													<br> для путешествий </div>
-												<div class="right-side-quiz__img"> <img src="img/pictures/box.png" alt="Набор подарков
-										   для путешествий"> </div>
+												<div class="right-side-quiz__img">
+													<picture>
+														<source srcset="img/pictures/box.webp" type="image/webp">
+														<img src="img/pictures/box.png" alt="Набор подарков
+														для путешествий"> 
+													</picture>
+										</div>
 											</div>
 											<div class="right-side-quiz__bottom"> <span>Осталось 4 вопроса</span>
 												<br>
@@ -243,8 +306,13 @@
 												<div class="right-side-quiz__head"> <span>Ответьте на 5 вопросов</span>
 													<br> и получите набор подарков
 													<br> для путешествий </div>
-												<div class="right-side-quiz__img"> <img src="img/pictures/box.png" alt="Набор подарков
-										   для путешествий"> </div>
+												<div class="right-side-quiz__img">
+													<picture>
+														<source srcset="img/pictures/box.webp" type="image/webp">
+														<img src="img/pictures/box.png" alt="Набор подарков
+														для путешествий"> 
+													</picture>
+										</div>
 											</div>
 										</div>
 										<div class="left-side-quiz">
@@ -257,26 +325,54 @@
 											</div>
 											<h3>Сколько человек отправляется в путешествие?</h3>
 											<div class="country">
-												<div class="country-item country-item--human"> <img src="img/pictures/quiz-2-1.png" alt="1 человек">
+												<div class="country-item country-item--human"> 
+													<picture>
+														<source srcset="img/pictures/quiz-2-1.webp" type="image/webp">
+														<img src="img/pictures/quiz-2-1.png" alt="1 человек">
+													</picture>
 													<input class="checkbox" type="checkbox" name="human1" value="1 человек" id="human1">
 													<label class="control-label" for="human1"> 1 человек </label>
 												</div>
-												<div class="country-item country-item--human"> <img src="img/pictures/quiz-2-2.png" alt="2 человека">
+												<div class="country-item country-item--human">
+													 <img src="img/pictures/quiz-2-2.png" alt="2 человека">
+													 <picture>
+														<source srcset="img/pictures/quiz-2-2.webp" type="image/webp">
+														<img src="img/pictures/quiz-2-2.png" alt="2 человека">
+													</picture>
 													<input class="checkbox" type="checkbox" name="human2" value="2 человека" id="human2">
 													<label class="control-label" for="human2"> 2 человека </label>
 												</div>
-												<div class="country-item country-item--human"> <img src="img/pictures/quiz-2-3.png" alt="3-5 человек">
+												<div class="country-item country-item--human">
+													 <picture>
+														<source srcset="img/pictures/quiz-2-3.webp" type="image/webp">
+														<img src="img/pictures/quiz-2-3.png" alt="3-5 человек">
+													</picture>
 													<input class="checkbox" type="checkbox" name="human3" value="3-5 человек" id="human3">
 													<label class="control-label" for="human3"> 3-5 человек </label>
 												</div>
-												<div class="country-item country-item--human"> <img src="img/pictures/quiz-2-4.png" alt="Более 5 человек">
+												<div class="country-item country-item--human">
+													 <picture>
+														<source srcset="img/pictures/quiz-2-4.webp" type="image/webp">
+														<img src="img/pictures/quiz-2-4.png" alt="Более 5 человек">
+													</picture>
 													<input class="checkbox" type="checkbox" name="human4" value="Более 5 человек" id="human4">
 													<label class="control-label" for="human4"> Более 5 человек </label>
 												</div>
 											</div>
 											<div class="wizard-btns">
-												<button type="button" class="wizard-btn prev-step"> <img src="img/icons/next.png" alt="Назад"> Назад </button>
-												<button type="button" class="wizard-btn wizard-main-btn pull-right next-step"> <span class="ink animate"></span> Далее <img src="img/icons/btns.png" alt=""> </button>
+												<button type="button" class="wizard-btn prev-step">
+													<picture>
+														<source srcset="img/icons/next.webp" type="image/webp">
+														<img src="img/icons/next.png" alt="Назад">
+													</picture>	 
+													Назад 
+												</button>
+												<button type="button" class="wizard-btn wizard-main-btn pull-right next-step"> <span class="ink animate"></span> Далее
+													<picture>
+														<source srcset="img/icons/btns.webp" type="image/webp">
+														<img src="img/icons/btns.png" alt="">
+													</picture>
+												 </button>
 											</div>
 										</div>
 										<div class="right-side-quiz">
@@ -284,8 +380,13 @@
 												<div class="right-side-quiz__head"> <span>Ответьте на 5 вопросов</span>
 													<br> и получите набор подарков
 													<br> для путешествий </div>
-												<div class="right-side-quiz__img"> <img src="img/pictures/box.png" alt="Набор подарков
-                                       для путешествий"> </div>
+												<div class="right-side-quiz__img">
+													<picture>
+														<source srcset="img/pictures/box.webp" type="image/webp">
+														<img src="img/pictures/box.png" alt="Набор подарков
+														для путешествий">
+													</picture>
+									             </div>
 											</div>
 											<div class="right-side-quiz__bottom"> <span>Осталось 3 вопроса</span>
 												<br>
@@ -302,8 +403,13 @@
 												<div class="right-side-quiz__head"> <span>Ответьте на 5 вопросов</span>
 													<br> и получите набор подарков
 													<br> для путешествий </div>
-												<div class="right-side-quiz__img"> <img src="img/pictures/box.png" alt="Набор подарков
-										   для путешествий"> </div>
+												<div class="right-side-quiz__img">
+													<picture>
+														<source srcset="img/pictures/box.webp" type="image/webp">
+														<img src="img/pictures/box.png" alt="Набор подарков
+														для путешествий"> 
+													</picture>
+										</div>
 											</div>
 										</div>
 										<div class="left-side-quiz">
@@ -316,34 +422,60 @@
 											</div>
 											<h3>Какие отели вам подходят больше всего?</h3>
 											<div class="country">
-												<div class="country-item country-item--human"> <img src="img/pictures/quiz-3-1.png" alt="Бюджетные
-                                             отели">
+												<div class="country-item country-item--human">
+												<picture>
+													<source srcset="img/pictures/quiz-3-1.webp" type="image/webp">
+													<img src="img/pictures/quiz-3-1.png" alt="Бюджетные
+													отели">
+												</picture>
 													<input class="checkbox" type="checkbox" name="otel1" value="Бюджетные
                                              отели" id="otel1">
 													<label class="control-label" for="otel1"> Бюджетные отели </label>
 												</div>
-												<div class="country-item country-item--human"> <img src="img/pictures/quiz-3-2.png" alt="Отели среднего
-                                       класса">
+												<div class="country-item country-item--human"> 
+													<picture>
+														<source srcset="img/pictures/quiz-3-2.png" type="image/webp">
+														<img src="img/pictures/quiz-3-2.png" alt="Отели среднего
+														класса">
+													</picture>
 													<input class="checkbox" type="checkbox" name="otel2" value="Отели среднего
                                        класса" id="otel2">
 													<label class="control-label" for="otel2"> Отели среднего класса </label>
 												</div>
-												<div class="country-item country-item--human"> <img src="img/pictures/quiz-3-3.png" alt="Отели бизнес
-                                       класса">
+												<div class="country-item country-item--human"> 
+													<picture>
+														<source srcset="img/pictures/quiz-3-3.webp" type="image/webp">
+														<img src="img/pictures/quiz-3-3.png" alt="Отели бизнес
+														класса">
+													</picture>
 													<input class="checkbox" type="checkbox" name="otel3" value="Отели бизнес
                                        класса" id="otel3">
 													<label class="control-label" for="otel3"> Отели бизнес класса </label>
 												</div>
-												<div class="country-item country-item--human"> <img src="img/pictures/quiz-3-4.png" alt="Отели премиум
-                                       класса">
+												<div class="country-item country-item--human">
+													<picture>
+														<source srcset="img/pictures/quiz-3-4.webp" type="image/webp">
+														<img src="img/pictures/quiz-3-4.png" alt="Отели премиум
+														класса">
+													</picture>
 													<input class="checkbox" type="checkbox" name="otel4" value="Отели премиум
                                        класса" id="otel4">
 													<label class="control-label" for="otel4"> Отели премиум класса </label>
 												</div>
 											</div>
 											<div class="wizard-btns">
-												<button type="button" class="wizard-btn prev-step"> <img src="img/icons/next.png" alt="Назад"> Назад </button>
-												<button type="button" class="wizard-btn wizard-main-btn pull-right next-step"> <span class="ink animate"></span> Далее <img src="img/icons/btns.png" alt=""> </button>
+												<button type="button" class="wizard-btn prev-step">
+													 <picture>
+														<source srcset="img/icons/next.webp" type="image/webp">
+														<img src="img/icons/next.png" alt="Назад">
+													</picture>
+													  Назад </button>
+												<button type="button" class="wizard-btn wizard-main-btn pull-right next-step"> <span class="ink animate"></span> Далее 
+													<picture>
+														<source srcset="img/icons/btns.webp" type="image/webp">
+														<img src="img/icons/btns.png" alt=""> 
+													</picture>
+												</button>
 											</div>
 										</div>
 										<div class="right-side-quiz">
@@ -351,8 +483,13 @@
 												<div class="right-side-quiz__head"> <span>Ответьте на 5 вопросов</span>
 													<br> и получите набор подарков
 													<br> для путешествий </div>
-												<div class="right-side-quiz__img"> <img src="img/pictures/box.png" alt="Набор подарков
-                                       для путешествий"> </div>
+												<div class="right-side-quiz__img">
+													<picture>
+														<source srcset="img/pictures/box.webp" type="image/webp">
+														<img src="img/pictures/box.png" alt="Набор подарков
+														для путешествий"> 
+													</picture>
+									</div>
 											</div>
 											<div class="right-side-quiz__bottom"> <span>Осталось 2 вопроса</span>
 												<br>
@@ -369,8 +506,15 @@
 												<div class="right-side-quiz__head"> <span>Ответьте на 5 вопросов</span>
 													<br> и получите набор подарков
 													<br> для путешествий </div>
-												<div class="right-side-quiz__img"> <img src="img/pictures/box.png" alt="Набор подарков
-										   для путешествий"> </div>
+												<div class="right-side-quiz__img">
+												<picture>
+													<source srcset="img/pictures/box.webp" type="image/webp">
+													<img src="img/pictures/box.png" alt="Набор подарков
+										   для путешествий"> 
+												</picture>
+										   
+										
+										</div>
 											</div>
 										</div>
 										<div class="left-side-quiz">
@@ -384,34 +528,68 @@
 											<h3>Какой досуг предпочтительней во время тура?</h3>
 											<div class="subtitle">Можно выбрать несколько вариантов </div>
 											<div class="country">
-												<div class="country-item"> <img src="img/pictures/quiz-4-1.png" alt="Пляжный отдых ">
+												<div class="country-item"> 
+													<picture>
+														<source srcset="img/pictures/quiz-4-1.webp" type="image/webp">
+														<img src="img/pictures/quiz-4-1.png" alt="Пляжный отдых ">
+													</picture>	
 													<input class="checkbox" type="checkbox" name="relax1" value="Пляжный отдых " id="relax1">
 													<label class="control-label" for="relax1"> Пляжный отдых </label>
 												</div>
-												<div class="country-item"> <img src="img/pictures/quiz-4-2.png" alt="Экскурсии с гидом ">
+												<div class="country-item"> 
+													<picture>
+														<source srcset="img/pictures/quiz-4-2.webp" type="image/webp">
+														<img src="img/pictures/quiz-4-2.png" alt="Экскурсии с гидом ">
+													</picture>	
 													<input class="checkbox" type="checkbox" name="relax2" value="Экскурсии с гидом " id="relax2" >
 													<label class="control-label" for="relax2"> Экскурсии с гидом </label>
 												</div>
-												<div class="country-item"> <img src="img/pictures/quiz-4-3.png" alt="Активный отдых">
+												<div class="country-item"> 
+													<picture>
+														<source srcset="img/pictures/quiz-4-3.png" type="image/webp">
+														<img src="img/pictures/quiz-4-3.png" alt="Активный отдых">
+													</picture>	
 													<input class="checkbox" type="checkbox" name="relax3" value="Активный отдых" id="relax3">
 													<label class="control-label" for="relax3"> Активный отдых </label>
 												</div>
-												<div class="country-item"> <img src="img/pictures/quiz-4-4.png" alt="Лечебный досуг">
+												<div class="country-item">
+													<picture>
+														<source srcset="img/pictures/quiz-4-4.webp" type="image/webp">
+														<img src="img/pictures/quiz-4-4.png" alt="Лечебный досуг">
+													</picture>	
 													<input class="checkbox" type="checkbox" name="relax4" value="Лечебный досуг" id="relax4">
 													<label class="control-label" for="relax4"> Лечебный досуг </label>
 												</div>
-												<div class="country-item"> <img src="img/pictures/quiz-4-5.png" alt="Отдых с детьми">
+												<div class="country-item"> 
+													<picture>
+														<source srcset="img/pictures/quiz-4-5.webp" type="image/webp">
+														<img src="img/pictures/quiz-4-5.png" alt="Отдых с детьми">
+													</picture>	
 													<input class="checkbox" type="checkbox" name="relax5" value="Отдых с детьми" id="relax5">
 													<label class="control-label" for="relax5"> Отдых с детьми </label>
 												</div>
-												<div class="country-item"> <img src="img/pictures/quiz-4-6.png" alt="Самостоятельный">
+												<div class="country-item">
+													<picture>
+														<source srcset="img/pictures/quiz-4-6.webp" type="image/webp">
+														<img src="img/pictures/quiz-4-6.png" alt="Самостоятельный">
+													</picture>	
 													<input class="checkbox" type="checkbox" name="relax6" value="Самостоятельный" id="relax6">
 													<label class="control-label" for="relax6"> Самостоятельный </label>
 												</div>
 											</div>
 											<div class="wizard-btns">
-												<button type="button" class="wizard-btn prev-step"> <img src="img/icons/next.png" alt="Назад"> Назад </button>
-												<button type="button" class="wizard-btn wizard-main-btn pull-right next-step"> <span class="ink animate"></span> Далее <img src="img/icons/btns.png" alt=""> </button>
+												<button type="button" class="wizard-btn prev-step"> 
+													<picture>
+														<source srcset="img/icons/next.webp" type="image/webp">
+														<img src="img/icons/next.png" alt="Назад">
+													</picture>	
+													 Назад </button>
+												<button type="button" class="wizard-btn wizard-main-btn pull-right next-step"> <span class="ink animate"></span> Далее 
+													<picture>
+														<source srcset="img/icons/btns.webp" type="image/webp">
+														<img src="img/icons/btns.png" alt=""> 
+													</picture>	
+												</button>
 											</div>
 										</div>
 										<div class="right-side-quiz">
@@ -419,8 +597,13 @@
 												<div class="right-side-quiz__head"> <span>Ответьте на 5 вопросов</span>
 													<br> и получите набор подарков
 													<br> для путешествий </div>
-												<div class="right-side-quiz__img"> <img src="img/pictures/box.png" alt="Набор подарков
-                                       для путешествий"> </div>
+												<div class="right-side-quiz__img"> 
+													<picture>
+														<source srcset="img/pictures/box.webp"  type="image/webp">
+														<img src="img/pictures/box.png" alt="Набор подарков
+														для путешествий">
+													</picture> 
+												</div>
 											</div>
 											<div class="right-side-quiz__bottom"> <span>Остался 1 вопрос</span>
 												<br>
@@ -437,8 +620,13 @@
 												<div class="right-side-quiz__head"> <span>Ответьте на 5 вопросов</span>
 													<br> и получите набор подарков
 													<br> для путешествий </div>
-												<div class="right-side-quiz__img"> <img src="img/pictures/box.png" alt="Набор подарков
-										   для путешествий"> </div>
+												<div class="right-side-quiz__img"> 
+													<picture>
+														<source srcset="img/pictures/box.webp"  type="image/webp">
+														<img src="img/pictures/box.png" alt="Набор подарков
+														для путешествий">
+													</picture>
+												  </div>
 											</div>
 										</div>
 										<div class="left-side-quiz">
@@ -451,28 +639,49 @@
 											</div>
 											<h3>Выберите ваш подарок</h3>
 											<div class="country">
-												<div class="country-item"> <img src="img/pictures/quiz-5-1.png" alt="Водонепронициаемая
-                                             сумка, Зарядка для моб,
-                                             очки">
+												<div class="country-item"> 
+													<picture>
+														<source srcset="img/pictures/quiz-5-1.webp"  type="image/webp">
+														<img src="img/pictures/quiz-5-1.png" alt="Водонепронициаемая
+														сумка, Зарядка для моб,
+														очки">
+													</picture>
 													<input class="checkbox" type="checkbox" name="box1" value="Водонепронициаемая
                                              сумка, Зарядка для моб,
                                              очки" id="box1">
 													<label class="control-label" for="box1"> Водонепронициаемая сумка, Зарядка для моб, очки </label>
 												</div>
-												<div class="country-item"> <img src="img/pictures/quiz-5-2.png" alt="Скидка 15% на оформление
-                                        визы/страховка">
+												<div class="country-item"> 
+													<picture>
+														<source srcset="img/pictures/quiz-5-2.webp"  type="image/webp">
+														<img src="img/pictures/quiz-5-2.png" alt="Скидка 15% на оформление
+														визы/страховка">
+													</picture>
 													<input class="checkbox" type="checkbox" name="box2" value="Скидка 15% на оформление
                                         визы/страховка" id="box2">
 													<label class="control-label" for="box2">Скидка 15% на оформление визы/страховка </label>
 												</div>
-												<div class="country-item"> <img src="img/pictures/quiz-5-3.png" alt="Скидка 10% на тур">
+												<div class="country-item"> 
+													<picture>
+														<source srcset="img/pictures/quiz-5-3.webp"  type="image/webp">
+														<img src="img/pictures/quiz-5-3.png" alt="Скидка 10% на тур">
+													</picture>
 													<input class="checkbox" type="checkbox" name="box3" value="Скидка 10% на тур" id="box3">
 													<label class="control-label" for="box3"> Скидка 10% на тур </label>
 												</div>
 											</div>
 											<div class="wizard-btns">
-												<button type="button" class="wizard-btn prev-step"> <img src="img/icons/next.png" alt="Назад"> Назад </button>
-												<button type="button" class="wizard-btn wizard-main-btn pull-right next-step"> <span class="ink animate"></span> Далее <img src="img/icons/btns.png" alt=""> </button>
+												<button type="button" class="wizard-btn prev-step"> 
+													<picture>
+														<source srcset="img/icons/next.webp"  type="image/webp">
+														<img src="img/icons/next.png" alt="Назад">
+													</picture> Назад </button>
+												<button type="button" class="wizard-btn wizard-main-btn pull-right next-step"> <span class="ink animate"></span> Далее 
+													<picture>
+														<source srcset="img/icons/btns.webp"  type="image/webp">
+														<img src="img/icons/btns.png" alt="">
+													</picture>
+												</button>
 											</div>
 										</div>
 										<div class="right-side-quiz">
@@ -480,8 +689,13 @@
 												<div class="right-side-quiz__head"> <span>Ответьте на 5 вопросов</span>
 													<br> и получите набор подарков
 													<br> для путешествий </div>
-												<div class="right-side-quiz__img"> <img src="img/pictures/box.png" alt="Набор подарков
-                                       для путешествий"> </div>
+												<div class="right-side-quiz__img"> 
+													<picture>
+														<source srcset="img/pictures/box.webp"  type="image/webp">
+														<img src="img/pictures/box.png" alt="Набор подарков
+														для путешествий">
+													</picture>
+									 </div>
 											</div>
 											<div class="right-side-quiz__bottom"> <span>Тест пройден!</span>
 												<br>
@@ -493,7 +707,12 @@
 								</div>
 
 								<div class="tab-pane wizard-finish-tab" role="tabpanel" id="step6">
-									<a class="close" href="#"><img src="img/icons/close.png" alt="Закрыть"></a>
+									<a class="close" href="#">
+										<picture>
+											<source srcset="img/icons/close.webp"  type="image/webp">
+											<img src="img/icons/close.png" alt="Закрыть">
+										</picture>
+									</a>
 									<div class="wizard-finish-tab-wrapper">
 										<div class="row">
 											<div class="text-center">
@@ -647,7 +866,11 @@
 		</div>
 
 		<form class="callback-form" id="callback-form">
-			<a class="callback-close" href="#"><img src="img/icons/close.png" alt="Закрыть"></a>
+			<a class="callback-close" href="#">
+				<picture>
+					<source srcset="img/icons/close.webp"  type="image/webp">
+					<img src="img/icons/close.png" alt="Закрыть"></a>
+				</picture>
 			<div class="wizard-finish-tab-wrapper">
 				<div class="row">
 					<div class="text-center">
@@ -670,10 +893,10 @@
 		<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
 		<script src="js/jquery.maskedinput.min.js"></script>
-		<script src="js/main.js"></script>
-		<script src="js/form.js"></script>
-		<script src="js/callback.js"></script>
-		<script src="js/telegramform.js"></script>
+		<script src="js/main-minify.js"></script>
+		<script src="js/form-minify.js"></script>
+		<script src="js/callback-minify.js"></script>
+		<script src="js/telegramform-minify.js"></script>
 		
 	</body>
 
