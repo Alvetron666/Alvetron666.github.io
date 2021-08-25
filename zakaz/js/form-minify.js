@@ -1,1 +1,0 @@
-document.addEventListener("DOMContentLoaded",function(){const e=document.getElementById("quiz-form");e.addEventListener("submit",async function(t){t.preventDefault();let n=new FormData(e),a=await fetch("/../php/mail.php",{method:"POST",body:n});if(a.ok){await a.json();e.reset()}else alert("Ошибка")})});

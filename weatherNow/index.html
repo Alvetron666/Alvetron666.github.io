@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Rampart+One&display=swap" rel="stylesheet">
+
+        <title>WeatherNow</title>
+    </head>
+    <body>
+        <div class="weather-card">
+            <h3 class="city-name">Not Found</h3>
+            <div class="date">
+                <p class="day">00</p>
+                .
+                <p class="month">00</p>
+            </div>
+            <figure class="weather-info">
+                <img src="img/clear.png" alt="clear sky">
+            </figure>
+            <p class="current-temp">Not Found</p>
+            <div class="city-wind">
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="40" height="40" viewBox="-48 -33 50 50">
+                    <desc id="en">Observed wind speed: 63–67 knots</desc>
+                        <path style="fill:black; stroke:none; stroke-width:0;" d="M -44,1 L -44,0 L -39,-17.25 L -34,0 L -34,1"/>
+                    <g style="fill:none; stroke:black; stroke-width:2;">
+                        <path d="M 0,0 h -40"/>
+                        <path d="M -30,0 l -5,-17"/>
+                        <path d="M -25,0 l -2.5,-8.5"/>
+                    </g>
+                </svg>
+                <p>
+                    Not Found
+                </p>
+            </div>
+            <div class="city-humidity">
+                <img src="img/humidity-icon.png" width="24" height="24" alt="Влажность">
+                <p>Not Found</p>
+            </div>
+            
+            <div class="custom-sel">
+                <div class="sel-header">
+                    <p>Kyiv</p>
+                </div>
+                <ul class="sel-body"></ul>
+            </div>
+        </div>
+        <script src="script.js"></script>
+        <script src="select.js"></script>
+    </body>
+</html>

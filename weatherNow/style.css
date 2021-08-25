@@ -1,0 +1,125 @@
+/* 
+font-family: 'Lato', sans-serif;
+font-family: 'Rampart One', cursive;
+ */
+:root{
+    --main-color: #1594ce;
+    --purple-color: #473290;
+}
+*{
+    box-sizing: border-box;
+}
+p{
+    margin: 0;
+}
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+html,
+body{
+    height: 100%;
+}
+body{
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    background-color: #7c3795;
+    color: var(--main-color);
+    display: flex;
+    margin: 0;
+}
+.weather-card{
+    width: 30%;
+    min-width: 300px;
+    height: 80%;
+    margin: auto;
+    padding: 15px 30px;
+    background-color: var(--purple-color);
+    border-radius: 10px;
+    text-align: center;
+}
+.city-name{
+    font-family: 'Rampart One', cursive;
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.date{
+    display: flex;
+    justify-content: center;
+}
+.current-temp{
+    font-size: 20px;
+    margin: 20px 0;
+}
+.weather-info img{
+    width: 25%;
+}
+.sel-city{
+    background-color: white;
+}
+.city-wind,
+.city-humidity{
+    max-width: 120px;
+    height: 30px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.city-wind p,
+.city-humidity p{
+    margin: 0;
+}
+.city-humidity{
+    margin-bottom: 20px;
+}
+.custom-sel{
+    cursor: pointer;
+    width: 75%;
+    margin: 0 auto;
+    position: relative;
+} 
+.sel-header{
+    width: 100%;
+    height: 40px;
+    margin: 0 auto;
+    border: solid 3px var(--main-color);
+    border-radius: 10px;
+    position: relative;
+}
+.custom-sel.active .sel-header{
+    border-radius: 10px 10px 0 0;
+    background-color: rgba(21, 148, 206, .2);
+}
+.sel-header p{
+    line-height: 34px;
+}
+.sel-body{
+    position: absolute;
+    top: 40px;
+    width: 100%;
+    color: var(--purple-color);
+}
+
+.custom-opt{
+    display: none;
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+    text-align: center;
+    line-height: 35px;
+    background-color: var(--main-color);
+    transition: background-color .1s;
+}
+.custom-sel.active .custom-opt{
+    display: block;
+}
+.custom-opt:hover{
+    background-color: #128ac2;
+} 
+.custom-opt:active{
+    background-color: #1282b6;
+}
