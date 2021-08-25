@@ -16,10 +16,10 @@ function dateTogether(){
     }else{
         dayBlock.textContent = day;
     }
-    if(+month < 10){
-        monthBlock.textContent = `0${month}`;
+    if(+month + 1 < 10){
+        monthBlock.textContent = `0${month + 1}`;
     }else{
-        monthBlock.textContent = month;
+        monthBlock.textContent = month + 1;
     }
 }
 dateTogether()

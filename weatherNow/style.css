@@ -123,3 +123,24 @@ body{
 .custom-opt:active{
     background-color: #1282b6;
 }
+@media(max-width:900px){
+    .weather-card{
+        width: 95%;
+        display: flex;
+    }
+    .card-inner{
+        width: 80%;
+        margin:  auto;
+    }
+    body{
+        background-color: red;
+    }
+}
+@media(max-width:500px){
+    .weather-card{
+        width: 85%;
+    }
+    .card-inner{
+        width: 100%;
+    }
+}
