@@ -14,11 +14,7 @@ customSel.onclick = () => customSel.classList.toggle('active');
 customOption.forEach( item => {
     item.onclick = function(){
         optionClick(this)
-        for(let key in cities){
-            if(key === this.textContent){
-                request(cities[key]) 
-            }
-        }
+        request(cities[this.textContent])
     };
 })
 
