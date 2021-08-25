@@ -33,9 +33,8 @@ body{
 .weather-card{
     width: 30%;
     min-width: 300px;
-    height: 80%;
     margin: auto;
-    padding: 15px 30px;
+    padding: 30px 30px 50px 30px;
     background-color: var(--purple-color);
     border-radius: 10px;
     text-align: center;
@@ -131,9 +130,6 @@ body{
     .card-inner{
         width: 80%;
         margin:  auto;
-    }
-    body{
-        background-color: red;
     }
 }
 @media(max-width:500px){
