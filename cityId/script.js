@@ -8,7 +8,7 @@ button.onclick = f1;
 
 function f1(){
 
-    fetch(`http://api.openweathermap.org/data/2.5/weather?q=${input.value}&appid=c3e4df96faf834664217c9bb7db6bdf2`)
+    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${input.value}&appid=c3e4df96faf834664217c9bb7db6bdf2`)
     .then(data => {
         if(data.status === 404){
             p.textContent = 'Not Found'
