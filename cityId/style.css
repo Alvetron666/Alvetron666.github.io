@@ -45,6 +45,7 @@ input{
     outline: 0;
     caret-color : #27337e; 
     border: solid 3px #5268f8;
+    border-radius: 0;
     background-color: #ebe9dc;
 
     transition: box-shadow .1s;
