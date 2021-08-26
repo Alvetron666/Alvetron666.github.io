@@ -8,24 +8,23 @@ for(let key in cities){
     document.querySelector('.sel-body').appendChild(div);
     customOption[customOption.length] = div;
 }
-
 customSel.onclick = () => customSel.classList.toggle('active');
-
 customOption.forEach( item => {
     item.onclick = function(){
         optionClick(this)
         request(cities[this.textContent])
         localStorage.setItem('city', this.textContent);
+        storage = localStorage.getItem('city');
+        console.log(storage)
     };
 })
-
 function optionClick(a){
     selHeader.textContent = a.textContent;
 }
 
-try{
-    storage = localStorage.getItem('city');
-    request(cities[storage]);
-}catch(err){
+if(localStorage.getItem('city') != null){
+    console.log(localStorage.getItem('city'))
+    request(cities[localStorage.getItem('city')]);
+}else{
     request(cities.Kyiv);
 }
