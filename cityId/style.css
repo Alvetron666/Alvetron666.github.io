@@ -1,0 +1,56 @@
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+h1, h2, h3, h4 ,h5, h6, p{
+    margin: 0;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+  }
+
+html, 
+body{
+    height: 100%;
+}
+body{
+    display: flex;
+    margin: 0;
+    padding: 0 20px;
+    background-color: #27337e;
+}
+.group{
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+}
+.group input{
+    font-size: 18px;
+    text-align: center;
+    color: #000;
+    width: 100%;
+    height: 60px;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    outline: 0;
+    caret-color : #27337e; 
+    border: solid 3px #5268f8;
+    background-color: #ebe9dc;
+    box-shadow: 0 0 10px 0 #5268f8;
+    transition: box-shadow .1s;
+}
+.group input:focus{
+    box-shadow: 0 0 40px 0 #5268f8;
+}
+.group p{
+    font-size: 20px;
+    text-align: center;
+    color: #ebe9dc;
+}
