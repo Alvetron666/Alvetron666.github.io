@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Passwd generator</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    <button type="button">generate</button>
+    <input type="text"></input>
+    <script>
+        let btn = document.querySelector('button');
+        let out = document.querySelector('input');
+        let str = '';
+        let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, '!', '@', '#', '$', '%', '^', '&', '*', '(', ')', '-', '+', 'q', 'w', 'e', 'r', 't', 'y', 'u', 'i', 'o', 'p', 'a', 's', 'd', 'f', 'g', 'h', 'j', 'k', 'l', 'z', 'x', 'c', 'v', 'b', 'n', 'm'];
+        btn.onclick = generator;
+        function generator(){
+            str = '';
+            out.value = '';
+            for(let i = 0; i < 32; i++){
+            rand = Math.round(Math.random() * arr.length) ;  
+            str += arr[rand];
+            }
+            out.value = str;
+        }
+        
+    </script>
+</body>
+</html>
