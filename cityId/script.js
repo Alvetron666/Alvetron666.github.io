@@ -1,8 +1,9 @@
 let input = document.querySelector('input');
+let button = document.querySelector('button')
 let p = document.querySelector('p');
 
 
-input.oninput= f1;
+button.onclick = f1;
 
 
 function f1(){
@@ -11,7 +12,6 @@ function f1(){
     .then(data => {
         if(data.status === 404){
             p.textContent = 'Not Found'
-            return
         }else{
             return data.json();
         }
