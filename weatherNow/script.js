@@ -76,4 +76,4 @@ function wheatherCond(resp, arr){
 }
 
 
-request(cities.Kyiv)
+
