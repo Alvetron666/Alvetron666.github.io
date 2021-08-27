@@ -3,25 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Passwd generator</title>
-    <style>
-
-    </style>
 </head>
 <body>
-    <button type="button">generate</button>
-    <input type="text"></input>
+    
+    <div class="middle-block">
+        <h1>Password generator</h1>
+        <div class="group">
+            <input type="text"></input>
+            <button type="button">generate</button>
+        </div>
+    </div>
+
+    
     <script>
         let btn = document.querySelector('button');
         let out = document.querySelector('input');
         let str = '';
-        let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, '!', '@', '#', '$', '%', '^', '&', '*', '(', ')', '-', '+', 'q', 'w', 'e', 'r', 't', 'y', 'u', 'i', 'o', 'p', 'a', 's', 'd', 'f', 'g', 'h', 'j', 'k', 'l', 'z', 'x', 'c', 'v', 'b', 'n', 'm'];
+        let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, '!', '@', '#', '$', '%', '^', '&', '*', '(', ')', '-', '+', 'q', 'w', 'e', 'r', 't', 'y', 'u', 'i', 'o', 'p', 'a', 's', 'd', 'f', 'g', 'h', 'j', 'k', 'l', 'z', 'x', 'c', 'v', 'b', 'n', 'm', 'Q', 'W', 'E', 'R', 'T', 'Y', 'U', 'I', 'O', 'P', 'A', 'S', 'D', 'F', 'G', 'H', 'J', 'K', 'L', 'Z', 'X', 'C', 'V', 'B', 'N', 'M'];
         btn.onclick = generator;
         function generator(){
             str = '';
             out.value = '';
-            for(let i = 0; i < 32; i++){
-            rand = Math.round(Math.random() * arr.length) ;  
+            let rand1 = parseInt(Math.random() * (32 - 16) + 16)
+            for(let i = 0; i < rand1; i++){
+            rand = parseInt(Math.random() * arr.length); 
             str += arr[rand];
             }
             out.value = str;

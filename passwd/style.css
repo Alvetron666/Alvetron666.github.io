@@ -1,0 +1,57 @@
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+body,
+html{
+    height: 100%;
+}
+body{
+    display: flex;
+    margin: 0;
+    background-color:  #8de4af;
+}
+
+.middle-block{
+    max-width: 400px;
+    width: 100%;
+    margin: auto;
+    color: #389583;
+    text-align: center;
+}
+.group{
+    width: 100%;
+}
+.group input{
+    width: 100%;
+    padding: 10px 20px;
+    border: solid 3px #389583;
+    background-color: #8de4af;
+    color: inherit;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.group button{
+    width: 100%;
+    border: solid 3px #389583;
+    background-color: #8de4af;
+    color: inherit;
+    cursor: pointer;
+    padding: 10px 20px;
+}
+.group input,
+.group button{
+    transition: background-color .2s;
+}
+.group input:hover,
+.group button:hover{
+    background-color: #59e08d;
+}
+.group input:active,
+.group button:active{
+    background-color: #24d367;
+}
+.group input:focus{
+    background-color: #24d367;
+}
