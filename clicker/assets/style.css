@@ -1,22 +1,31 @@
 :root{
-    --font-size-xs : 2rem;
-    --font-size-m : 2rem;
+    --font-size-xs : 1.2rem;
+    --font-size-s : 1.35rem;
+    --font-size-m : 1.5rem;
 }
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500&display=swap');
+
+img{
+    width: 100%;
+}
 
 html{
     font-size: 18px;
 }
+
 body{
     font-family: 'Quicksand', sans-serif;
 }
 
 button{
+    cursor: pointer;
     font-family: inherit;
-   
+    border: none;
+    background-color: transparent;
 }
 
 .field{
+    user-select: none;
     position: relative;
     width: 300px;
     height: 300px;
@@ -26,7 +35,7 @@ button{
     background-color: #c3c3c3;
     margin: auto;
     box-shadow: 0 0 0 2px #000;
-    
+    overflow: hidden;
 }
 
 .start-block,
@@ -46,8 +55,10 @@ button{
     cursor: pointer;
 }
 
+
+
 .start-block__text{
-    font-size: 24px;
+    font-size: var(--font-size-m);
     margin: auto;
     text-align: center;
     animation: startAnim 1.5s ease-in-out infinite;
@@ -65,20 +76,37 @@ button{
     margin: auto;
 }
 
+.end-block__res-text{
+    font-size: var(--font-size-s);
+}
+
 .attempt-btn{
-    cursor: pointer;
-    border: none;
-    background-color: transparent;
+    width: 100%;
+    font-size: var(--font-size-xs);
+    text-align: center;
 }
 
 .field__goal{
     cursor: pointer;
     position: absolute;
-    width: 50px;
-    height: 50px;
+    top: 50%;
+    left: 50%;
+    width: 15%;
+    height: 15%;
     background-color: #000;
     border-radius: 50%;
     overflow: hidden;
+    transition: transform .002s;
+}
+
+.field__goal:active{
+    transform: scale(1.1);
+}
+
+.goal-middle{
+    top: 50% !important;
+    left: 50% !important; 
+    transform: translate(-50%, -50%);
 }
 
 .field__goal img{
@@ -94,12 +122,40 @@ button{
     text-align: center;
 }
 
+.settings-wrapper{
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    text-align: right;
+}
+.setting-btn{
+    position: relative;
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    background-image: url('img/icons/setting-icon.png');
+    background-size: 100%;
+    transition: transform .2s;
+}
+
+ .setting-btn:active{
+    transform: rotate(360deg);
+} 
+
+.settings{
+    display: none;
+}
+
+.db{
+    display: block;
+}
+
+.dn{
+    display: none;
+}
 
 
 @keyframes startAnim{
-    0%{
-
-    }
     50%{
         transform: scale(1.1);
     }
