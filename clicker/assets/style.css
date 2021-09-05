@@ -140,6 +140,7 @@ button{
     right: 20px;
     text-align: right;
     background-color: #fff;
+    color: #000;
 }
 .setting-btn{
     width: 30px;
