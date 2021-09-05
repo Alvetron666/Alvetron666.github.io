@@ -13,10 +13,11 @@ let sizeInp = document.querySelector('.size-range')
 let goalSizeText = document.querySelector('.goal-size')
 let timerRange = document.querySelector('.timer-range')
 let timerText = document.querySelector('.timer-switcher')
+let skinItem = document.querySelectorAll('.skin-menu__item')
 let num = 0;
+let 
 
 function start(){
-    console.log(1)
     this.classList.add('dn')
     randGoalCoords()
     goal.onclick = clickFunc()
@@ -47,32 +48,11 @@ function clickFunc(){
                randGoalCoords()
                 click++
                 cout.textContent = click
-                return click
         }
 }
 function randGoalCoords(){
     let randX = parseInt(Math.random() * (field.offsetWidth - goal.offsetWidth))
     let randY = parseInt(Math.random() * (field.offsetHeight - goal.offsetHeight))
-/*     console.log(randY)
-    while(randX > field.offsetWidth - goal.offsetWidth){
-        randX = Math.random() * field.offsetWidth
-        goal.style.left =  randX + 'px'
-    }
-    while(randX > field.offsetWidth - goal.offsetWidth){
-        randY = Math.random() * field.offsetWidth
-        console.log(randY)
-        goal.style.top =  randY + 'px'
-    } */
-/*     if(randX > field.offsetWidth - goal.offsetWidth){
-        goal.style.left =  field.offsetWidth - goal.offsetWidth + 'px'
-    }else{
-        goal.style.left =  randX + 'px'
-    } 
-     if(randY > field.offsetHeight - goal.offsetHeight){
-        goal.style.top =  field.offsetHeight - goal.offsetHeight  + 'px'
-    }else{
-        goal.style.top =  randY + 'px'
-    } */
     goal.style.left =  randX + 'px'
     goal.style.top =  randY + 'px'
 }
@@ -86,16 +66,19 @@ function attempt(){
 
 function showSetting(){
     num++
+    goal.onclick = ''
     if(num % 2 === 0){
         goal.classList.remove('goal-middle')
         startBlock.classList.remove('dn')
         startBlock.onclick = start
     }else{
+        if(!startBlock.classList.contains('dn')){
+            startBlock.classList.add('dn')
+        }
         clearInterval(timer)
         timerChanger()
         cout.textContent = 0;
         goal.classList.add('goal-middle')
-        goal.onclick = ''
     }
     settingBlock.classList.toggle('db')
 }
@@ -116,3 +99,8 @@ sizeInp.oninput = sizeChanger
 timerRange.oninput = timerChanger
 
 sizeChanger()
+
+skinItem.forEach( item => {
+    console.log(item.src)
+})
+

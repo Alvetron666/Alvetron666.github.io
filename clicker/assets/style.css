@@ -9,12 +9,23 @@ img{
     width: 100%;
 }
 
+html,
+body{
+    height: 100%;
+}
+
 html{
     font-size: 18px;
 }
 
 body{
     font-family: 'Quicksand', sans-serif;
+    background-image: url('img/field-bg/bg.png');
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
 }
 
 button{
@@ -29,12 +40,12 @@ button{
     position: relative;
     width: 300px;
     height: 300px;
-    background-image: url('../bg.jpg');
+    background-image: url('img/field-bg/dungeon.jpg');
     background-size: 190%;
     background-repeat: no-repeat;
     background-color: #c3c3c3;
-    margin: auto;
-    box-shadow: 0 0 0 2px #000;
+/*     margin: auto; */
+    box-shadow: 0 0 0 2px #fff;
     overflow: hidden;
 }
 
@@ -99,9 +110,9 @@ button{
     transition: transform .002s;
 }
 
-.field__goal:active{
+/* .field__goal:active{
     transform: scale(1.1);
-}
+} */
 
 .goal-middle{
     top: 50% !important;
@@ -124,12 +135,13 @@ button{
 
 .settings-wrapper{
     position: fixed;
+    z-index: 3;
     top: 20px;
     right: 20px;
     text-align: right;
+    background-color: #fff;
 }
 .setting-btn{
-    position: relative;
     width: 30px;
     height: 30px;
     padding: 0;
@@ -144,6 +156,33 @@ button{
 
 .settings{
     display: none;
+}
+
+.skin-wrapper{
+    position: fixed;
+    top: 60px;
+    right: 20px;
+    width: 150px;
+    background-color: #fff;
+    text-align: right;
+}
+
+.skin-btn{
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    background-image: url('img/goal-img/ricardo.jpg');
+    background-size: 100%;
+    border-radius: 50%;
+}
+
+.skin-menu{
+    margin-top: 10px;
+}
+
+.skin-menu__item{
+    width: 30px;
+    border-radius: 50%;
 }
 
 .db{
