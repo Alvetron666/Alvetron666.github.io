@@ -15,7 +15,7 @@ let timerRange = document.querySelector('.timer-range')
 let timerText = document.querySelector('.timer-switcher')
 let skinItem = document.querySelectorAll('.skin-menu__item')
 let num = 0;
-let 
+
 
 function start(){
     this.classList.add('dn')
