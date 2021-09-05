@@ -178,9 +178,11 @@ button{
 
 .skin-menu{
     margin-top: 10px;
+    display: none;
 }
 
 .skin-menu__item{
+    cursor: pointer;
     width: 30px;
     border-radius: 50%;
 }

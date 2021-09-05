@@ -1,6 +1,7 @@
 let field = document.querySelector('.field')
 let startBlock = document.querySelector('.start-block')
 let goal = field.querySelector('.field__goal')
+let goalImg = goal.querySelector('img')
 let cout = document.querySelector('.count')
 let timerBlock = document.querySelector('.timer')
 let timer;
@@ -13,9 +14,11 @@ let sizeInp = document.querySelector('.size-range')
 let goalSizeText = document.querySelector('.goal-size')
 let timerRange = document.querySelector('.timer-range')
 let timerText = document.querySelector('.timer-switcher')
+let skinBtn = document.querySelector('.skin-btn')
+let skinMenu = document.querySelector('.skin-menu')
 let skinItem = document.querySelectorAll('.skin-menu__item')
-let num = 0;
-
+let num = 0
+let skins = {}
 
 function start(){
     this.classList.add('dn')
@@ -24,10 +27,6 @@ function start(){
     timerFunc()
 }
 function timerFunc(){
-/*     let timerStop = setTimeout(() => {
-        goal.onclick = '';
-    }, Number(timerBlock.textContent) * 1000)
-     */
     timer = setInterval(()=>{
         let currentNum = Number(timerBlock.textContent)
         if(currentNum < 2){
@@ -64,7 +63,7 @@ function attempt(){
     timerFunc()
 }
 
-function showSetting(){
+function def(){
     num++
     goal.onclick = ''
     if(num % 2 === 0){
@@ -80,6 +79,10 @@ function showSetting(){
         cout.textContent = 0;
         goal.classList.add('goal-middle')
     }
+}
+
+function showSetting(){
+    def()
     settingBlock.classList.toggle('db')
 }
 function sizeChanger(){
@@ -91,16 +94,24 @@ function timerChanger(){
     timerBlock.textContent  = timerRange.value
     timerText.textContent = timerRange.value
 }
+function skinFunc(){
+    goalImg.src = this.src;
+    skinBtn.style.backgroundImage = `url(${this.src})`;
+}
+function showSkinMenu(){
+    def()
+    skinMenu.classList.toggle('db')
+}
 
 startBlock.onclick = start
 attemptBtn.onclick = attempt
 settingBtn.onclick = showSetting
 sizeInp.oninput = sizeChanger
 timerRange.oninput = timerChanger
+skinItem.forEach( item => {
+    item.onclick = skinFunc
+})
+skinBtn.onclick = showSkinMenu
 
 sizeChanger()
-
-skinItem.forEach( item => {
-    console.log(item.src)
-})
 
