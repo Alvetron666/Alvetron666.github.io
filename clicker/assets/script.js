@@ -63,7 +63,7 @@ function attempt(){
     timerFunc()
 }
 
-function def(){
+/* function def(){
     num++
     goal.onclick = ''
     if(num % 2 === 0){
@@ -74,16 +74,55 @@ function def(){
         if(!startBlock.classList.contains('dn')){
             startBlock.classList.add('dn')
         }
+        startBlock.classList.add('dn')
         clearInterval(timer)
         timerChanger()
         cout.textContent = 0;
         goal.classList.add('goal-middle')
     }
-}
+} */
 
 function showSetting(){
-    def()
-    settingBlock.classList.toggle('db')
+    if(settingBlock.classList.contains('db')){
+        settingBlock.classList.remove('db')
+        goal.classList.remove('goal-middle')
+        startBlock.classList.remove('dn')
+        startBlock.onclick = start
+        field.classList.remove('field--preview') 
+    }else{
+        settingBlock.classList.add('db')
+        startBlock.classList.add('dn')
+        clearInterval(timer)
+        timerChanger()
+        cout.textContent = 0;
+        goal.classList.add('goal-middle')
+        field.classList.add('field--preview')
+    }
+
+/*     if(settingBlock.classList.contains('db')){
+        settingBlock.classList.remove('db')
+        startBlock.classList.add('dn')
+        clearInterval(timer)
+        timerChanger()
+        cout.textContent = 0;
+        goal.classList.add('goal-middle')
+    }else{
+        settingBlock.classList.add('db')
+        field.classList.add('field--preview')
+        field.classList.remove('field--preview')
+        goal.classList.remove('goal-middle')
+        startBlock.classList.remove('dn')
+        startBlock.onclick = start 
+        
+    } */
+    if(skinMenu.classList.contains('db')){
+        skinMenu.classList.remove('db')
+    }
+/*     if(field.classList.contains('field--preview')){
+        
+    }else{
+        field.classList.add('field--preview')
+    } */
 }
 function sizeChanger(){
     goal.style.width = sizeInp.value + '%'
@@ -99,8 +138,26 @@ function skinFunc(){
     skinBtn.style.backgroundImage = `url(${this.src})`;
 }
 function showSkinMenu(){
-    def()
-    skinMenu.classList.toggle('db')
+    if(skinMenu.classList.contains('db')){
+        skinMenu.classList.remove('db')
+        goal.classList.remove('goal-middle')
+        startBlock.classList.remove('dn')
+        startBlock.onclick = start
+        field.classList.remove('field--preview') 
+    }else{
+        skinMenu.classList.add('db')
+        startBlock.classList.add('dn')
+        clearInterval(timer)
+        timerChanger()
+        cout.textContent = 0;
+        goal.classList.add('goal-middle')
+        field.classList.add('field--preview')
+    }
+/*     if(field.classList.contains('field--preview')){
+        field.classList.remove('field--preview')
+    }else{
+        field.classList.add('field--preview')
+    } */
 }
 
 startBlock.onclick = start

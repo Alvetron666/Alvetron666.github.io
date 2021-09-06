@@ -25,7 +25,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: #fff;
+    color: #000;
 }
 
 button{
@@ -36,15 +36,39 @@ button{
 }
 
 .field{
-    user-select: none;
-    position: relative;
+/*     user-select: none;*/
+    position: relative; 
     width: 300px;
     height: 300px;
+/*     background-image: url('img/field-bg/dungeon.jpg');
+    background-size: 190%;
+    background-repeat: no-repeat;
+    background-color: #c3c3c3;
+    box-shadow: 0 0 0 2px #fff; */
+}
+
+.field--preview::before{
+    content: 'Preview';
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 20px;
+    font-size: 24px;
+    text-align: center;
+    color: #fff;
+}
+
+.field__inner{
+    width: 100%;
+    height: 100%;
+    user-select: none;
+    position: relative;
     background-image: url('img/field-bg/dungeon.jpg');
     background-size: 190%;
     background-repeat: no-repeat;
     background-color: #c3c3c3;
-/*     margin: auto; */
     box-shadow: 0 0 0 2px #fff;
     overflow: hidden;
 }
@@ -61,12 +85,9 @@ button{
     background-color: rgba(255, 255, 255, .9);
 }
 
-
 .start-block{
     cursor: pointer;
 }
-
-
 
 .start-block__text{
     font-size: var(--font-size-m);
@@ -127,10 +148,12 @@ button{
 
 .count{
     text-align: center;
+    color: #fff;
 }
 
 .timer{
     text-align: center;
+    color: #fff;
 }
 
 .settings-wrapper{
@@ -139,16 +162,21 @@ button{
     top: 20px;
     right: 20px;
     text-align: right;
-    background-color: #fff;
-    color: #000;
 }
 .setting-btn{
     width: 30px;
     height: 30px;
     padding: 0;
-    background-image: url('img/icons/setting-icon.png');
     background-size: 100%;
+}
+
+.setting-btn__svg{
+    width: 100%;
     transition: transform .2s;
+}
+
+.setting-btn__svg path{
+    fill: #fff;
 }
 
  .setting-btn:active{
@@ -156,7 +184,9 @@ button{
 } 
 
 .settings{
+    padding: 5px 5px;
     display: none;
+    background-color: #fff;
 }
 
 .skin-wrapper{
@@ -164,7 +194,6 @@ button{
     top: 60px;
     right: 20px;
     width: 150px;
-    background-color: #fff;
     text-align: right;
 }
 
