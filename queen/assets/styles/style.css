@@ -1,10 +1,27 @@
+:root{
+    --main-font: "Colus";
+    --secondary-font: "Montserrat Regular";
+    --font-size-xxs: .5555556rem; /* 10 */
+    --font-size-xs: .66666667rem; /* 12 */
+    --font-size-s: .8rem; /* 18 */
+    --font-size-m: 0.9rem; /* 20 */
+    --font-size-l: 1.12rem; /* 25 */
+    --font-size-xxl: 1.6rem; /* 38 */
+    --font-size-xxxl: 2.4rem; /* 55 */
+}
+
 @font-face{
     font-family: "Colus";
     src: url('../font/Colus.ttf') format('opentype');
 }
+
 @font-face{
     font-family: "Montserrat Regular";
     src: url('../font/Montserrat-Regular.ttf') format('opentype');
+}
+
+html{
+    font-size: 18px;
 }
 
 *,
@@ -42,8 +59,8 @@ a{
     clip: rect(0 0 0 0)
 }
 body{
-    font-family: Colus;
-    font-size: 18px;
+    font-family: var(--main-font);
+    font-size: var(--font-size-s);
     color: #fff;
     background-color: #000;
     margin: 0;
@@ -71,8 +88,8 @@ body{
 }
 
 .header__text{
-    font-size: 27px;
-    line-height: .8;
+    font-size: 1.5rem;
+    line-height: 1;
     text-transform: uppercase;
     text-align: center;
 }
@@ -81,7 +98,7 @@ body{
     margin-bottom: 42px;
 }
 .header__way-text{
-    font-size: 10px;
+    font-size: var(--font-size-xxs);
     text-align: center;
     text-transform: uppercase;
     margin: 22px 0 10px 0;
@@ -109,7 +126,7 @@ body{
     z-index: 1;
     width: 100%;
     height: 100%;
-    font-size: 12px;
+    font-size: var(--font-size-xs);
     background: linear-gradient(180deg, #E8C081 -16.89%, #DBA861 13.55%, #F6DAAD 37.3%, #FFF0D1 60.43%, #994C17 100.01%);
     border: 1px solid #000;
     border-radius: 14px;
@@ -138,7 +155,7 @@ body{
 
 .header__mouse-icon{
     display: block;
-    margin: 0 auto 97px auto;
+    margin: 0 auto 80px auto;
 }
 
 .main-nav{
@@ -148,6 +165,7 @@ body{
 
 .nav__list{
     display: flex;
+    font-size: 1rem;
 }
 
 .nav__item{
@@ -171,7 +189,7 @@ body{
 }
 
 .about-project__header__text{  
-    font-size: 35px;
+    font-size: 1.5rem;
     background: linear-gradient(180deg, #E8C081 -16.89%, #DBA861 13.55%, #F6DAAD 37.3%, #FFF0D1 60.43%, #994C17 100.01%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -179,7 +197,7 @@ body{
 }
 
 .about-project__header__text-50{
-    font-size: 50px;
+    font-size: 2.1rem;
     letter-spacing: 2px;
     margin-bottom: 31px;
 }
@@ -189,15 +207,15 @@ body{
     background-image: url("../images/about-us-text-bg.png");
     background-repeat: no-repeat;
     background-position: center;
-    height: 330px;
+    background-size: 31%;
+    height: 220px;
     margin-bottom: 28px;
 }
 
 .about-project__text{
-    font-family: "Montserrat Regular";
-    font-size: 25px;
+    font-family: var(--secondary-font);
+    font-size: var(--font-size-l);
     max-width: 830px;
-    min-height: 234px;
     padding: 30px 8px 30px 8px;
     margin: auto;
     background-color: #020202;
@@ -206,22 +224,19 @@ body{
 }
 
 .about-project__title{
-    font-size: 45px;
+    font-size: 2rem;
     margin-bottom: 32px;
 }
 
 .about-project__text-age{
-    font-size: 20px;
+    font-size: var(--font-size-l);
 }
 
 .program{
-    padding-top: 137px;
-    padding-bottom: 170px;
+    padding-top: 100px;
+    padding-bottom: 130px;
 }
 
-.program .container{
-    max-width: 1300px;
-}
 
 .program__header{
     text-align: center;
@@ -229,7 +244,7 @@ body{
 }
 
 .program__title{
-    font-size: 55px;
+    font-size: var(--font-size-xxxl);
     background: linear-gradient(180deg, #E8C081 -16.89%, #DBA861 13.55%, #F6DAAD 37.3%, #FFF0D1 60.43%, #994C17 100.01%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -237,7 +252,7 @@ body{
 }
 
 .program__header__text{
-    font-size: 20px;
+    font-size: var(--font-size-m);
 }
 
 .program__list{
@@ -251,6 +266,7 @@ body{
     background-repeat: no-repeat;
     width: 50%;
     height: 182px;
+    background-size: 19%;
 }
 
 .program__item:last-child::after{
@@ -277,10 +293,6 @@ body{
 
 .program__item--right p{
     margin-left: auto;
-}
-
-.program__item--left:last-child/* ::after */{
-    border: solid 1px white;
 }
 
 .program__item--horse{
@@ -372,13 +384,14 @@ body{
 
 .program__point__inner{
     margin: auto;
-    font-size: 38px;
+    font-size: var(--font-size-xxl);
     color: #000;
     user-select: none; 
 }
+
 .program__item__title{
     max-width: 280px;
-    font-size: 30px;
+    font-size: 1.5rem;
     font-weight: 400;
     margin-bottom: 12px;
 }
@@ -388,8 +401,8 @@ body{
 }
 
 .program__item__text{
-    font-family: "Montserrat Regular";
-    font-size: 18px;
+    font-family: var(--secondary-font);
+    font-size: var(--font-size-s);
     max-width: 480px;
 }
 
@@ -411,13 +424,13 @@ body{
 }
 
 .coronation-block__program-text{
-    font-family: "Montserrat Regular";
-    font-size: 18px;
+    font-family: var(--secondary-font);
+    font-size: var(--font-size-s);
 }
 
 .program__text{
     text-align: center;
-    font-size: 25px;
+    font-size: var(--font-size-l);
 }
 
 .gold__text{
@@ -439,10 +452,10 @@ body{
 }
 
 .grand-final .container{
-    max-width: 1157px;
+    max-width: 1000px;
 }
 .grand-final__title{
-    font-size: 82px;
+    font-size: 3.5rem;
     margin-bottom: 30px;
     background: linear-gradient(90.71deg, #E8C081 -1.22%, #DBA861 24.8%, #F6DAAD 45.09%, #FFF0D1 64.87%, #994C17 98.69%);
     -webkit-background-clip: text;
@@ -450,7 +463,7 @@ body{
 }
 
 .grand-final__text-days{
-    font-size: 38px;
+    font-size: var(--font-size-xxl);
     margin-bottom: 69px;
 }
 
@@ -460,15 +473,44 @@ body{
 
 .grand-final__list{
     display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
+    margin-bottom: 90px;
+    position: relative;
+}
+
+.grand-final__list::before{
+    content: "";
+    width: 990px;
+    height: 629px;
+    position: absolute;
+    top: -139px;
+    right: -450px;
+    background-image: url("../images/glitters-1.png");
+    background-repeat: no-repeat;
+    background-size: 80%;
+    z-index: -1;
+}
+
+.grand-final__list::after{
+    content: "";
+    width: 990px;
+    height: 629px;
+    position: absolute;
+    bottom: -225px;
+    right: 258px;
+    background-image: url("../images/glitters-2.png");
+    background-repeat: no-repeat;
+    background-size: 80%;
+    z-index: -1;
 }
 
 .grand-final__item{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 566px;
-    height: 234px;
+    width: 49%;
+    height: 190px;
     padding: 50px 25px;
     margin-bottom: 69px;
     background-color: #000;
@@ -479,18 +521,15 @@ body{
     text-align: right;
 }
 
-.grand-final__item:nth-child(2n){
-    margin-left: 25px;
-}
 
 .grand-final__item-title{
     width: 270px;
-    font-size: 25px;
+    font-size: var(--font-size-l);
     margin-left: auto;
 }
 
 .grand-final__item-text{
-    font-family: "Montserrat Regular";
+    font-family: var(--secondary-font);
     width: 270px;
     margin-left: auto;
     margin-top: 10px;
@@ -536,15 +575,8 @@ body{
     background-image: url("../images/grand-final/bg-10.png");
 }
 
-.grand-final__bg{
-    position: absolute;
-    top: -17px;
-    left: -300px;
-    z-index: -1;
-}
-
 .grand-final__footer__info{
-    font-size: 25px;
+    font-size: var(--font-size-l);
     margin-bottom: 50px;
 }
 
@@ -553,27 +585,29 @@ body{
 }
 
 .winner-info__title{
-    font-size: 40px;
+    font-size: 1.7rem;
+    margin-bottom: 18px;
 }
 
 .winner-info__prize{
-    font-size: 80px;
+    font-size: 3.5rem;
+    margin-bottom: 18px;
     background: linear-gradient(180deg, rgba(220, 169, 99, 0.13) -16.89%, #DBA861 13.55%, #F6DAAD 37.3%, #FFF0D1 60.43%, #994C17 100.01%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
 .winner-info__text{
-    font-size: 25px;
+    font-size: var(--font-size-l);
 }
 
 .advantage{
     text-align: center;
-    padding: 45px 0 87px;
+    padding: 45px 0 70px;
 }
 
 .advantage__title{
-    font-size: 55px;
+    font-size: var(--font-size-xxxl);
     background: linear-gradient(90.71deg, #E8C081 -1.22%, #DBA861 24.8%, #F6DAAD 45.09%, #FFF0D1 64.87%, #994C17 98.69%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -581,8 +615,20 @@ body{
 }
 
 .advantage__item{
-    font-size: 25px;
-    margin-bottom: 68px;
+    position: relative;
+    font-size: var(--font-size-l);
+    padding-bottom: 33px;
+    margin-bottom: 33px;
+}
+
+.advantage__item:after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #3A3021;
 }
 
 .advantage__item:last-child{
@@ -590,7 +636,7 @@ body{
 }
 
 .advantage__text{
-    font-size: 37px;
+    font-size: 1.6rem;
     margin-bottom: 35px;
     background: linear-gradient(180deg, rgba(220, 169, 99, 0.13) -16.89%, #DBA861 13.55%, #F6DAAD 37.3%, #FFF0D1 60.43%, #994C17 100.01%);
     -webkit-background-clip: text;
@@ -600,12 +646,9 @@ body{
 .page-footer{
     padding: 9px 0 33px 0;
 }
+
 .page-footer .container{
     display: flex;
-}
-
-.page-footer__logo-link{
-/*     margin-right: 30px; */
 }
 
 .page-footer__col{
@@ -651,12 +694,12 @@ body{
 }
 
 .policy-list{
+    font-family: var(--secondary-font);
     display: flex;
-    font-family: "Montserrat Regular";
 }
 
 .policy-list__item{
-    font-size: 15px;
+    font-size: 0,83333333rem;
     margin-right: 120px;
     text-decoration: underline;
 }
