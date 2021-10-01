@@ -58,6 +58,11 @@ a{
     opacity: 0;
     clip: rect(0 0 0 0)
 }
+
+.page-wrapper{
+    overflow: hidden
+}
+
 body{
     font-family: var(--main-font);
     font-size: var(--font-size-s);
@@ -74,7 +79,7 @@ body{
 }
 
 .page-header{
-    padding: 12px 0 30px 0;
+    padding: 12px 0 60px 0;
     background-image: url('../images/header-bg.png');
     background-repeat: no-repeat;
     background-position: center;
