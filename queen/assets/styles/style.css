@@ -450,6 +450,7 @@ body{
 .coronation-block__program-text{
     font-family: var(--secondary-font);
     font-size: var(--font-size-s);
+    margin-bottom: 20px;
 }
 
 .program__text{
