@@ -427,7 +427,7 @@ body{
 .program__item__text{
     font-family: var(--secondary-font);
     font-size: var(--font-size-s);
-    width: 80%;
+    width: 100%;
 }
 
 .coronation-block{
@@ -836,11 +836,15 @@ body{
         margin-bottom: 0;
     }
 
+    .about-project__text-outer{
+        background-size: 374px;
+    }
+
     .program__item{
         width: 80%;
         top: 0;
         right: 0;
-        margin: 0 auto 30px auto;
+        margin: 0 auto 60px auto;
     }
 
     .program__item--left{
@@ -849,10 +853,11 @@ body{
 
     .program__item--right {
         padding: 20px 30px 0 25px;
+        transform: none;
     }
 
     .program__point{
-        top: -20px;
+        top: -50px;
     }
 
     .program__point::before{
@@ -920,9 +925,9 @@ body{
 
 @media(max-width: 500px){
     :root{
-        --font-size-s: .6rem;
+        --font-size-s: .5rem;
         --font-size-m: .6rem;
-        --font-size-l: .66rem;
+        --font-size-l: .7rem;
         --font-size-xxl: 1.2rem;
         --font-size-xxxl: 1.5rem
     }
@@ -930,6 +935,7 @@ body{
     .page-header{
         background-size: 100% 100%;
     }
+
     .header__way-text{
         font-size: .4rem;
         text-align: center;
@@ -982,7 +988,7 @@ body{
     }
 
     .about-project__header__text{
-        font-size: .8rem;
+        font-size: 1.1rem;
     }
     
     .about-project__header__text-50{
@@ -990,7 +996,7 @@ body{
     }
 
     .about-project__title{
-        font-size: 1rem;
+        font-size: 1.5rem;
     }
     
     .program{
@@ -999,6 +1005,8 @@ body{
 
     .program__item{
         height: auto;
+        padding: 0;
+        text-align: center;
     }
     
     .program__item:last-child{
@@ -1040,11 +1048,19 @@ body{
         font-size: .3rem;
     }
 
+    .winner-info{
+        margin-bottom: 30px;
+    }
+
     .winner-info__title{
         font-size: 1.1rem;
     }
     .winner-info__prize{
         font-size: 2.4rem;
+    }
+
+    .advantage{
+        padding-top: 5px;
     }
 
     .advantage__text{
