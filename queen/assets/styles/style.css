@@ -89,7 +89,7 @@ body{
 .header__crown{
     display: block;
     width: 187px;
-    margin: 0 auto 60px auto;
+    margin: 0 auto 30px auto;
 }
 
 .header__text{
@@ -124,7 +124,7 @@ body{
     margin-bottom: 39px;
 }
 
-.hedaer_button-wrapper{
+.header_button-wrapper{
     margin-top: 30px;
 }
 
@@ -926,14 +926,15 @@ body{
         --font-size-xxxl: 1.5rem
     }
     
-    .button-wrapper{
+    .header_button-wrapper
+    {
         width: 100px;
         height: 30px;
         margin-top: 10px;
         margin-bottom: 10px;
     }
 
-    .button{
+    .header_button-wrapper button{
         font-size: .4rem;
     }
 
@@ -992,11 +993,11 @@ body{
     }
 
     .about-project__header__text{
-        font-size: .6rem;
+        font-size: .8rem;
     }
     
     .about-project__header__text-50{
-        font-size: .69rem;
+        font-size: .89rem;
     }
 
     .about-project__title{
@@ -1026,8 +1027,13 @@ body{
     .coronation-block__crown{
         width: 140px;
     }
+
+    .coronation-block__program-text{
+        margin-bottom: 20px;
+    }
+
     .grand-final__title{
-        font-size: 1.5rem;
+        font-size: 1.9rem;
     }
 
     .grand-final__item {
