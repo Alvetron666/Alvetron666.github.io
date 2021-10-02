@@ -926,29 +926,17 @@ body{
         --font-size-xxxl: 1.5rem
     }
     
-    .header_button-wrapper
-    {
-        width: 100px;
-        height: 30px;
-        margin-top: 10px;
-        margin-bottom: 10px;
-    }
-
-    .header_button-wrapper button{
-        font-size: .4rem;
-    }
-
     .page-header{
         background-size: 100% 100%;
     }
     .header__way-text{
-        font-size: .2rem;
+        font-size: .4rem;
         text-align: center;
         text-transform: uppercase;
     }
 
     .header__mouse-icon{
-        width: 4px;
+        width: 7px;
         height: auto;
         margin-bottom: 5px;
     }
@@ -965,12 +953,12 @@ body{
     }
 
     .header__nav__list{
-        font-size: .3rem;
+        font-size: .6rem;
         margin: 0;
     }
     
     .header__text{
-        font-size: 0.3rem;
+        font-size: 0.6rem;
         margin-bottom: 5px;
     }
 
@@ -978,14 +966,14 @@ body{
         font-size: .3rem;
     }
 
-    .footer__nav__list{
+    .nav__list{
         font-size: .5rem;
         flex-direction: column;
         text-align: center;
         margin-bottom: 10px;
     }
-    .footer__nav__item{
-        margin: 0 auto;
+    .nav__item{
+        margin: 5px auto;
     }
     
     .about-project{
