@@ -1,6 +1,6 @@
 "use sctrict"
 document.addEventListener('DOMContentLoaded', function () {
-    const form = document.getElementById('quiz-form');
+    const form = document.getElementById('modal-participate');
 
     form.addEventListener('submit', formSend);
 
