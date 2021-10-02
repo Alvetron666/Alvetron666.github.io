@@ -319,50 +319,6 @@ body{
     right: 0;
 }
 
-/* .program__item--horse{
-    background-image: url("../images/program-section/horse-icon.png");
-}
-
-.program__item--paint{
-    background-image: url("../images/program-section/paint-icon.png");
-}
-
-.program__item--mask{
-    background-image: url("../images/program-section/mask-icon.png");
-}
-
-.program__item--chat{
-    background-image: url("../images/program-section/chat-icon.png");  
-}
-
-.program__item--candles{
-    background-image: url("../images/program-section/candles-icon.png");  
-}
-
-.program__item--sex{
-    background-image: url("../images/program-section/sex-icon.png");  
-}
-
-.program__item--micro{
-    background-image: url("../images/program-section/micro-icon.png");  
-} */
-
-/* .program__item--style{
-    background-image: url("../images/program-section/style-icon.png");  
-}
-
-.program__item--makeup{
-    background-image: url("../images/program-section/makeup-icon.png");  
-}
-
-.program__item--choreo{
-    background-image: url("../images/program-section/choreo-icon.png");  
-}
-
-.program__item--photo{
-    background-image: url("../images/program-section/photo-icon.png");  
-} */
-
 .program__point{
     position: absolute;
     top: 50px;
@@ -421,7 +377,6 @@ body{
 
 .program__item__title-right{
     margin-left: auto;
- /*    transform: translate(-4.3px, -87px); */
 }
 
 .program__item__text{
@@ -731,10 +686,107 @@ body{
 }
 
 .policy-list__item:hover{
+   
     text-decoration: none;
 }
 
+.modal-participate{
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: 999;
+    transform: translate(-50%, -50%);
+    max-width: 530px;
+    width: 80%;
+    padding: 10px;
+    background-color: #000;
+    box-shadow: 0 0 25px 10px #66370C;
+}
 
+.modal-participate--active{
+    display: block;
+}
+
+.modal-participate__label{
+    display: block;
+}
+
+.modal-participate__text{
+    margin-bottom: 10px;
+}
+
+.modal-participate__input{
+    width: 100%;
+    height: 30px;
+    margin: 0 auto;
+    padding: 10px 30px 10px 10px;
+    border: 0;
+    border-radius: 0;
+    box-shadow: 0 0 5px 5px #66370C;
+    outline: none;
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.modal-participate__input:focus{
+    box-shadow: 0 0 10px 5px #66370C;
+}
+
+.modal-participate__label + .modal-participate__label{
+    margin-top: 20px;
+}
+
+.user-icon{
+    background-image: url('../images/user-icon.png');
+}
+
+.phone-icon{
+    background-image: url('../images/phone-icon.png');
+}
+
+.city-icon{
+    background-image: url('../images/city-icon.png');
+    background-size: 25px;
+    background-position: right;
+}
+
+.modal-participate__button{
+    width: 100%;
+    height: 40px;
+    margin-top: 20px;
+}
+
+.modal-participate__close-btn{
+    position: absolute;
+    top: -30px;
+    right: -30px;
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    border: 0;
+}
+
+.modal-participate__close-btn:before,
+.modal-participate__close-btn::after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+}
+
+.modal-participate__close-btn:before{
+    transform: rotate(45deg);
+}
+
+.modal-participate__close-btn:after{
+    transform: rotate(-45deg);
+}
 @media(max-width: 1000px){
     .program__item--left::after,
     .program__item--right::after{
