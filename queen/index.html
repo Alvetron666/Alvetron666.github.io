@@ -320,21 +320,27 @@
     <form class="modal-participate">
         <label class="modal-participate__label">
             <p class="modal-participate__text">Ваше Имя</p>
-            <input class="modal-participate__input user-icon" type="text" placeholder="Укажите Ваше имя">
+            <input class="modal-participate__input user-icon" type="text" name="name" placeholder="Укажите Ваше имя">
         </label>
         <label class="modal-participate__label">
             <p class="modal-participate__text">Ваш Номер</p>
-            <input class="modal-participate__input phone-icon" type="text" placeholder="Введите Ваш номер">
+            <input class="modal-participate__input phone-icon" type="text" name="phone" placeholder="Введите Ваш номер">
         </label>
         <label class="modal-participate__label">
             <p class="modal-participate__text">Город</p>
-            <input class="modal-participate__input city-icon" type="text" placeholder="Укажите Ваш город">
+            <input class="modal-participate__input city-icon" type="text" name="city" placeholder="Укажите Ваш город">
         </label>
         <div class="button-wrapper modal-participate__button">
             <button class="button" type="submit">Оставить заявку</button>
             <div class="button-shadow"></div>
         </div>
         <button class="modal-participate__close-btn" type="button"></button>
+        <div class="policy__block">
+            <input type="checkbox" id="checkbox__policy" checked>
+            <label for="checkbox__policy">
+                <a class="policy__block__link" href="#">Пользовательское соглашение</a>
+            </label>
+        </div>
     </form>
     <script src="assets/js/script.js"></script>
 </body>

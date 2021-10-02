@@ -787,6 +787,15 @@ body{
 .modal-participate__close-btn:after{
     transform: rotate(-45deg);
 }
+
+.policy__block{
+    text-align: center;
+}
+
+.policy__block__link{
+    text-decoration: underline;
+}
+
 @media(max-width: 1000px){
     .program__item--left::after,
     .program__item--right::after{
