@@ -1,6 +1,6 @@
 "use sctrict"
 document.addEventListener('DOMContentLoaded', function () {
-    const form = document.getElementById('modal-participate');
+    const form = document.getElementById('quiz-form');
 
     form.addEventListener('submit', formSend);
 
@@ -15,6 +15,7 @@ document.addEventListener('DOMContentLoaded', function () {
             });
             if (response.ok) {
                 let result = await response.json();
+                // formPreview.innerHTML = '';
                 form.reset();
             } else {
                 alert('Ошибка');
