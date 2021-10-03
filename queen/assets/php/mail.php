@@ -8,6 +8,8 @@ require 'phpmailer/Exception.php';
 $name = $_POST['name'];
 $phone = $_POST['phone'];
 
+
+
 // Формирование самого письма
 $title = "Новая заявка с сайта";
 $body = "
@@ -28,12 +30,11 @@ try {
 		$mail->Host = 'smtp.mail.ru';
 		$mail->SMTPSecure = 'ssl';
 		$mail->Port = 465;
-    $mail->Username   = 'captainspike228302@mail.ru '; // Логин на почте
-    $mail->Password   = 'Andrea2310'; // Пароль на почте
-    $mail->setFrom('captainspike228302@mail.ru', 'noreply@gmail.com'); // Адрес самой почты и имя отправителя
+    $mail->Username   = 'sendmailmailer@mail.ru'; // Логин на почте
+    $mail->Password   = 'XupeKCYGwStd1fqxxs4X'; // Пароль на почте
+    $mail->setFrom('sendmailmailer@mail.ru', 'noreply@gmail.com'); // Адрес самой почты и имя отправителя
 
     // Получатель письма
-    $mail->addAddress('thesparkylegendary@gmail.com');
     $mail->addAddress('thesparkylegendary@gmail.com');
 
 // Отправка сообщения
@@ -43,7 +44,7 @@ $mail->Body = $body;
 
 // Проверяем отравленность сообщения
 if ($mail->send()) { $result = 'Данные отправлены!';}
-	else {$result = 'Ошибка';}
+	else {$result = 'Оeшибка';}
 } catch (Exception $e) {
     $result = "error";
     $status = "Сообщение не было отправлено. Причина ошибки: {$mail->ErrorInfo}";
