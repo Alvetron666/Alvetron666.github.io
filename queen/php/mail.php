@@ -7,6 +7,7 @@ require 'phpmailer/Exception.php';
 // Переменные, которые отправляет пользователь
 $name = $_POST['name'];
 $phone = $_POST['phone'];
+$city = $_POST['city'];
 
 
 
@@ -15,6 +16,7 @@ $title = "Новая заявка с сайта";
 $body = "
 <b>Имя:</b> $name <br>
 <b>Телефон:</b> $phone <br>
+<b>Город:</b> $city <br>
 ";
 
 // Настройки PHPMailer
@@ -35,7 +37,7 @@ try {
     $mail->setFrom('sendmailmailer@mail.ru', 'noreply@gmail.com'); // Адрес самой почты и имя отправителя
 
     // Получатель письма
-    $mail->addAddress('thesparkylegendary@gmail.com');
+    $mail->addAddress('tommfly66@gmail.com');
 
 // Отправка сообщения
 $mail->isHTML(true);

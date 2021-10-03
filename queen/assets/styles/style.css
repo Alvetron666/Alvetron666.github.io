@@ -43,6 +43,23 @@ ul{
 button{
     font-family: inherit;
     cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.button::before{
+    content: "";
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    background-color: #723c17;
+    border-radius: 50%;
+    opacity: .2;
+    
+    animation: buttonAnim 2.3s infinite;
+
 }
 
 a{
@@ -794,6 +811,13 @@ body{
 
 .policy__block__link{
     text-decoration: underline;
+}
+
+@keyframes buttonAnim{
+    100%{
+         transform: scale(24);
+        opacity: 0;
+    }
 }
 
 @media(max-width: 1000px){

@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function () {
         let formData = new FormData(form);
 
         
-            let response = await fetch('./php/mail.php', {
+            let response = await fetch('/../php/mail.php', {
                 method: 'POST',
                 body: formData,
             });
