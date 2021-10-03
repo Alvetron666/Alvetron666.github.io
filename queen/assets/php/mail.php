@@ -44,7 +44,7 @@ $mail->Body = $body;
 
 // Проверяем отравленность сообщения
 if ($mail->send()) { $result = 'Данные отправлены!';}
-	else {$result = 'Оeшибка';}
+	else {$result = 'Ошибка';}
 } catch (Exception $e) {
     $result = "error";
     $status = "Сообщение не было отправлено. Причина ошибки: {$mail->ErrorInfo}";

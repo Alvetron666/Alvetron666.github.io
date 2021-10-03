@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function () {
         let formData = new FormData(form);
 
         
-            let response = await fetch('/../../php/mail.php', {
+            let response = await fetch('/../php/mail.php', {
                 method: 'POST',
                 body: formData,
             });
@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 let result = await response.json();
                 form.reset();
             } else {
-                alert('ff');
+                alert('ошибка');
             }
    
     }
