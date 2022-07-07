@@ -66,3 +66,32 @@ slider.addEventListener("mousemove", (e) => {
   sliderInner.style.left = `${x2 - startX}px`;
 
 })
+
+slider.addEventListener("touchstart", (e) => {
+  pressed = true;
+  x1 = e.changedTouches[0].clientX;
+  startX = x1 - sliderInner.offsetLeft;
+  slider.style.cursor = "grabbing";
+})
+
+slider.addEventListener("touchend", () => {
+  pressed = false;
+  slider.style.cursor = "grab";
+  sliderInner.style.transition = "left 0.5s linear";
+  if(x2 < x1 - 100) {
+    nextSlider()
+    return false;
+  }else if(x2 > x1 - 100) {
+    prevSlider()
+    return false;
+  }
+})
+
+slider.addEventListener("touchmove", (e) => {
+  if(!pressed) return;
+  e.preventDefault();
+  sliderInner.style.transition = "none";
+  x2 = e.changedTouches[0].clientX;
+  sliderInner.style.left = `${x2 - startX}px`;
+
+})
