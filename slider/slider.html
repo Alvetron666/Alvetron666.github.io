@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="stylesheet" href="assets/css/main.css">
+
+  <title>Slider</title>
+</head>
+<body>
+  <button class="slider__prev" type="button">
+    previous
+    <svg class="slider__prev-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+    viewBox="0 0 490 490" style="enable-background:new 0 0 490 490;" xml:space="preserve">
+    <path d="M413.476,398.302L258.215,245L413.476,91.69L324.619,0L76.524,245l248.094,245L413.476,398.302z M120.086,245L324.14,43.502
+      l46.252,47.71L214.653,245l155.739,153.781l-46.252,47.717L120.086,245z"/>
+    </svg>
+  </button>
+  <button class="slider__next" type="button">
+    next
+    <svg class="slider__next-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+    viewBox="0 0 490 490" style="enable-background:new 0 0 490 490;" xml:space="preserve">
+    <path d="M413.476,398.302L258.215,245L413.476,91.69L324.619,0L76.524,245l248.094,245L413.476,398.302z M120.086,245L324.14,43.502
+      l46.252,47.71L214.653,245l155.739,153.781l-46.252,47.717L120.086,245z"/>
+    </svg>
+  </button>
+  <div class="slider">
+    <div class="slider__inner">
+      <div class="slider__item" data-slide="1">
+        <img class="slider__image" src="assets/images/item_1.jpg" alt="spider man">
+      </div>
+      <div class="slider__item" data-slide="2">
+        <img class="slider__image" src="assets/images/item_2.jpg" alt="spider man">
+      </div>
+      <div class="slider__item" data-slide="3">
+        <img class="slider__image" src="assets/images/item_3.jpg" alt="spider man">
+      </div>
+      <div class="slider__item" data-slide="4">
+        <img class="slider__image" src="assets/images/item_4.jpg" alt="spider man">
+      </div>
+    </div>
+  </div>
+  <div class="toggles">
+    <button class="toggle active" data-slide="1" type="button">1</button>
+    <button class="toggle" data-slide="2" type="button">2</button>
+    <button class="toggle" data-slide="3" type="button">3</button>
+    <button class="toggle" data-slide="4" type="button">4</button>
+  </div>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
